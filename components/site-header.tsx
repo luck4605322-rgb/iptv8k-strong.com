@@ -29,12 +29,12 @@ export function SiteHeader({ lang, dict }: { lang: Locale; dict: Dictionary }) {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex" aria-label="Main navigation">
+        <nav className="hidden items-center gap-3 md:flex" aria-label="Main navigation">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className="rounded-md border border-primary/40 bg-primary/10 px-4 py-2 text-base font-semibold text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
             >
               {link.label}
             </a>
@@ -72,7 +72,7 @@ export function SiteHeader({ lang, dict }: { lang: Locale; dict: Dictionary }) {
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-secondary hover:text-foreground"
+                className="rounded-md border border-primary/40 bg-primary/10 px-4 py-3 text-base font-semibold text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
               >
                 {link.label}
               </a>

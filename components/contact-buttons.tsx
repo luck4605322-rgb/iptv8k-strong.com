@@ -1,6 +1,6 @@
-import { MessageCircle, Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { contact } from "@/lib/contact"
+import { WhatsAppIcon, TelegramIcon } from "@/components/brand-icons"
 
 export function ContactButtons({
   size = "lg",
@@ -11,15 +11,15 @@ export function ContactButtons({
 }) {
   return (
     <div className={`flex flex-col justify-center gap-3 sm:flex-row ${className}`}>
-      <Button asChild size={size} className="btn-gradient gap-2 text-base font-semibold">
+      <Button asChild size={size} className="btn-gradient h-12 gap-2.5 px-6 text-base font-semibold [&_svg]:size-6">
         <a href={contact.whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label={`WhatsApp ${contact.whatsappNumber}`}>
-          <MessageCircle className="h-5 w-5" />
+          <WhatsAppIcon />
           WhatsApp
         </a>
       </Button>
-      <Button asChild size={size} variant="outline" className="btn-gradient-outline gap-2 border-primary/60 text-base font-semibold">
+      <Button asChild size={size} variant="outline" className="btn-gradient-outline h-12 gap-2.5 border-primary/60 px-6 text-base font-semibold [&_svg]:size-6">
         <a href={contact.telegramUrl} target="_blank" rel="noopener noreferrer" aria-label={`Telegram ${contact.telegramHandle}`}>
-          <Send className="h-4 w-4" />
+          <TelegramIcon />
           Telegram
         </a>
       </Button>
