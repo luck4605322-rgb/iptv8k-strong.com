@@ -25,7 +25,7 @@ export default async function Page({
   const dict = getDictionary(locale)
 
   return (
-    <div className="relative min-h-screen bg-background text-foreground">
+    <div className="relative min-h-screen text-foreground">
       {/* Sports background image — fixed, low opacity, behind everything, keeps text readable */}
       <div
         className="pointer-events-none fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-25"
