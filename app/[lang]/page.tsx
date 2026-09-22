@@ -4,6 +4,7 @@ import { Hero } from "@/components/hero"
 import { Features } from "@/components/features"
 import { Showcase } from "@/components/showcase"
 import { ContentMarquee } from "@/components/content-marquee"
+import { ProviderMarquee } from "@/components/provider-marquee"
 import { Reviews } from "@/components/reviews"
 import { WhatsAppProof } from "@/components/whatsapp-proof"
 import { Pricing } from "@/components/pricing"
@@ -33,6 +34,7 @@ export default async function Page({
         <Features dict={dict} />
         <Showcase dict={dict} />
         <ContentMarquee lang={locale} />
+        <ProviderMarquee lang={locale} />
         <Reviews lang={locale} />
         <WhatsAppProof lang={locale} />
         <Pricing dict={dict} lang={locale} />
