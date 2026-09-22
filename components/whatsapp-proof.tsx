@@ -56,7 +56,7 @@ export function WhatsAppProof({ lang }: { lang: Locale }) {
   const loop = [...whatsappChats, ...whatsappChats]
 
   return (
-    <section id="whatsapp" className="border-y border-border bg-background py-16 lg:py-24">
+    <section id="whatsapp" className="border-y border-border bg-background/30 py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-4 text-center">
           <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl">
