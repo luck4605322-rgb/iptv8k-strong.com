@@ -25,21 +25,7 @@ export default async function Page({
   const dict = getDictionary(locale)
 
   return (
-    <div className="relative min-h-screen text-foreground">
-      {/* Sports background image — fixed, low opacity, behind everything, keeps text readable */}
-      <div
-        className="pointer-events-none fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-25"
-        style={{ backgroundImage: "url(/bg-sports.png)" }}
-        aria-hidden="true"
-      />
-      <div
-        className="pointer-events-none fixed inset-0 -z-10"
-        style={{
-          background:
-            "linear-gradient(to bottom, oklch(0.13 0.008 60 / 0.82), oklch(0.13 0.008 60 / 0.92))",
-        }}
-        aria-hidden="true"
-      />
+    <div className="relative z-10 min-h-screen text-foreground">
       <StructuredData lang={locale} dict={dict} />
       <SiteHeader lang={locale} dict={dict} />
       <main>

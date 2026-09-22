@@ -4,6 +4,7 @@ import { Oswald, Inter } from "next/font/google"
 import { notFound } from "next/navigation"
 import { siteConfig } from "@/lib/seo"
 import { AnimatedBackground } from "@/components/animated-background"
+import { FloatingContact } from "@/components/floating-contact"
 import {
   locales,
   defaultLocale,
@@ -126,6 +127,7 @@ export default async function LangLayout({
       <body className="antialiased font-sans">
         <AnimatedBackground />
         {children}
+        <FloatingContact />
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
