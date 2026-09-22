@@ -7,26 +7,19 @@ export function Hero({ dict }: { dict: Dictionary }) {
   const t = dict.hero
   return (
     <section className="relative overflow-hidden">
-      {/* Looping background sports video served from /public. Drop your file at public/hero-bg.mp4 */}
-      <video
+      {/* IPTV-themed background image served from /public */}
+      <img
+        src="/hero-bg.png"
+        alt=""
         className="pointer-events-none absolute inset-0 -z-20 h-full w-full object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="auto"
-        poster="/hero-tv.png"
         aria-hidden="true"
-      >
-        <source src="/hero-bg.mp4" type="video/mp4" />
-        <source src="/hero-bg.webm" type="video/webm" />
-      </video>
+      />
       {/* Dark scrim + gold glow so the copy stays readable over the footage */}
       <div
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            "linear-gradient(90deg, oklch(0.13 0.008 60 / 0.94) 0%, oklch(0.13 0.008 60 / 0.82) 45%, oklch(0.13 0.008 60 / 0.5) 100%), radial-gradient(60% 50% at 70% 20%, oklch(0.8 0.14 82 / 0.18), transparent 70%)",
+            "linear-gradient(90deg, oklch(0.13 0.008 60 / 0.88) 0%, oklch(0.13 0.008 60 / 0.6) 40%, oklch(0.13 0.008 60 / 0.25) 100%), radial-gradient(60% 50% at 70% 20%, oklch(0.8 0.14 82 / 0.18), transparent 70%)",
         }}
         aria-hidden="true"
       />
