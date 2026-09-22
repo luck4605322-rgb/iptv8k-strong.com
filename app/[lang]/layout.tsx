@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next"
 import { Oswald, Inter } from "next/font/google"
 import { notFound } from "next/navigation"
 import { siteConfig } from "@/lib/seo"
+import { AnimatedBackground } from "@/components/animated-background"
 import {
   locales,
   defaultLocale,
@@ -123,6 +124,7 @@ export default async function LangLayout({
   return (
     <html lang={lang} className={`dark bg-background ${oswald.variable} ${inter.variable}`}>
       <body className="antialiased font-sans">
+        <AnimatedBackground />
         {children}
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
