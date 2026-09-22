@@ -29,9 +29,6 @@ export function SiteFooter({ lang, dict }: { lang: Locale; dict: Dictionary }) {
           </div>
           <p className="mt-6 text-sm font-medium text-muted-foreground">{dict.cta.contact}</p>
           <ContactButtons className="mt-4" />
-          <p className="mt-3 text-xs text-muted-foreground">
-            WhatsApp {contact.whatsappNumber} · Telegram {contact.telegramHandle}
-          </p>
         </div>
       </section>
 

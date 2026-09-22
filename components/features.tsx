@@ -3,6 +3,14 @@ import type { Dictionary } from "@/lib/i18n"
 
   const statValues = ["60,000+", "200,000+", "99.9%", "24/7"]
 const icons = [MonitorPlay, Zap, Globe2, Tv, ShieldCheck, Headphones]
+const bgImages = [
+  "/features/uhd.png",
+  "/features/servers.png",
+  "/features/global.png",
+  "/features/devices.png",
+  "/features/secure.png",
+  "/features/support.png",
+]
 
 export function Features({ dict }: { dict: Dictionary }) {
   const stats = [
@@ -33,16 +41,34 @@ export function Features({ dict }: { dict: Dictionary }) {
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {dict.features.items.map((f, i) => {
           const Icon = icons[i] ?? MonitorPlay
+          const bg = bgImages[i]
           return (
             <div
               key={f.title}
-              className="group rounded-2xl border border-border bg-card p-6 transition-colors hover:border-primary/50"
+              className="group relative overflow-hidden rounded-2xl border border-border p-6 transition-colors hover:border-primary/50"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                <Icon className="h-6 w-6" />
+              {/* Feature-specific background image with a dark overlay for readability */}
+              <img
+                src={bg || "/placeholder.svg"}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 h-full w-full object-cover opacity-75 transition-transform duration-500 group-hover:scale-105"
+              />
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    "linear-gradient(180deg, oklch(0.16 0.008 60 / 0.35) 0%, oklch(0.14 0.008 60 / 0.62) 100%)",
+                }}
+                aria-hidden="true"
+              />
+              <div className="relative z-10">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/20 text-primary backdrop-blur-sm transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                  <Icon className="h-6 w-6" />
+                </div>
+                <h3 className="mt-5 font-display text-xl font-semibold">{f.title}</h3>
+                <p className="mt-2 leading-relaxed text-muted-foreground">{f.desc}</p>
               </div>
-              <h3 className="mt-5 font-display text-xl font-semibold">{f.title}</h3>
-              <p className="mt-2 leading-relaxed text-muted-foreground">{f.desc}</p>
             </div>
           )
         })}
