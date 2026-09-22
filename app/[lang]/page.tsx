@@ -3,6 +3,9 @@ import { SiteHeader } from "@/components/site-header"
 import { Hero } from "@/components/hero"
 import { Features } from "@/components/features"
 import { Showcase } from "@/components/showcase"
+import { ContentMarquee } from "@/components/content-marquee"
+import { Reviews } from "@/components/reviews"
+import { WhatsAppProof } from "@/components/whatsapp-proof"
 import { Pricing } from "@/components/pricing"
 import { Faq } from "@/components/faq"
 import { SiteFooter } from "@/components/site-footer"
@@ -43,6 +46,9 @@ export default async function Page({
         <Hero dict={dict} />
         <Features dict={dict} />
         <Showcase dict={dict} />
+        <ContentMarquee lang={locale} />
+        <Reviews lang={locale} />
+        <WhatsAppProof lang={locale} />
         <Pricing dict={dict} lang={locale} />
         <Faq dict={dict} />
         <SiteFooter lang={locale} dict={dict} />

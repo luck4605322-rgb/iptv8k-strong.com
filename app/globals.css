@@ -194,4 +194,39 @@
   .btn-gradient-outline:hover {
     filter: brightness(1.08);
   }
+
+  /* Infinite horizontal marquee. The track holds the list twice, so shifting
+     it by -50% and looping produces a seamless, gap-free scroll. */
+  .marquee {
+    display: flex;
+    width: max-content;
+    flex-wrap: nowrap;
+    will-change: transform;
+  }
+  .marquee-left {
+    animation: marquee-scroll var(--marquee-duration, 60s) linear infinite;
+  }
+  .marquee-right {
+    animation: marquee-scroll var(--marquee-duration, 60s) linear infinite reverse;
+  }
+  /* Pause when the viewer hovers the row so they can read a poster/review. */
+  .marquee-wrap:hover .marquee {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-left,
+  .marquee-right {
+    animation: none;
+  }
 }

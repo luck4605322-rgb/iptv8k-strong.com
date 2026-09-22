@@ -14,7 +14,7 @@ export function SiteHeader({ lang, dict }: { lang: Locale; dict: Dictionary }) {
 
   const navLinks = [
     { label: dict.nav.features, href: "#features" },
-    { label: dict.nav.content, href: "#showcase" },
+    { label: dict.nav.content, href: "#content" },
     { label: dict.nav.pricing, href: "#pricing" },
     { label: dict.nav.faq, href: "#faq" },
   ]
