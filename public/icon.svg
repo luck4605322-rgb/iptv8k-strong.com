@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fav-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE58F" />
+      <stop offset="30%" stop-color="#E6B800" />
+      <stop offset="60%" stop-color="#FFF1B8" />
+      <stop offset="85%" stop-color="#D49B00" />
+      <stop offset="100%" stop-color="#996D00" />
+    </linearGradient>
+    
+    <radialGradient id="bg-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1F1B0E" />
+      <stop offset="100%" stop-color="#050505" />
+    </radialGradient>
+
+    <filter id="icon-glow">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- 暗黑金辉背景底板 -->
+  <rect width="512" height="512" rx="110" fill="url(#bg-glow)"/>
+  <rect width="490" height="490" x="11" y="11" rx="100" fill="none" stroke="url(#fav-gold)" stroke-width="4" opacity="0.4"/>
+
+  <!-- 8K 电视矢量图标 -->
+  <g transform="translate(100, 110) scale(2.3)">
+    <line x1="42" y1="36" x2="18" y2="10" stroke="url(#fav-gold)" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="16" cy="8" r="4.5" fill="url(#fav-gold)"/>
+    
+    <line x1="58" y1="36" x2="88" y2="4" stroke="url(#fav-gold)" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="90" cy="2" r="5.5" fill="url(#fav-gold)"/>
+
+    <path d="M 15,36 C 50,28 80,32 105,36 C 112,37 115,42 115,50 L 115,82 C 115,90 108,95 100,95 C 70,98 40,96 15,93 C 8,92 5,86 5,78 L 5,50 C 5,42 8,37 15,36 Z" 
+          fill="none" stroke="url(#fav-gold)" stroke-width="6" filter="url(#icon-glow)"/>
+
+    <path d="M 115,42 C 128,45 128,85 115,88" fill="none" stroke="url(#fav-gold)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 127,52 C 135,55 135,75 127,78" fill="none" stroke="url(#fav-gold)" stroke-width="5" stroke-linecap="round"/>
+
+    <text x="56" y="74" font-family="'Arial Black', 'Impact', sans-serif" font-weight="900" font-size="34" fill="url(#fav-gold)" text-anchor="middle" letter-spacing="-1">8K</text>
+  </g>
+</svg>
