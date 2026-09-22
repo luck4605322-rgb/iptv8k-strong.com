@@ -7,14 +7,8 @@ export function Hero({ dict }: { dict: Dictionary }) {
   const t = dict.hero
   return (
     <section className="relative overflow-hidden">
-      {/* IPTV-themed background image served from /public */}
-      <img
-        src="/hero-bg.png"
-        alt=""
-        className="pointer-events-none absolute inset-0 z-0 h-full w-full object-cover"
-        aria-hidden="true"
-      />
-      {/* Dark scrim + gold glow so the copy stays readable over the footage */}
+      {/* The animated site-wide tech background shows through here; this scrim
+          just keeps the copy readable over it. */}
       <div
         className="pointer-events-none absolute inset-0 z-0"
         style={{
