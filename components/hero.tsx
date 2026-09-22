@@ -11,19 +11,19 @@ export function Hero({ dict }: { dict: Dictionary }) {
       <img
         src="/hero-bg.png"
         alt=""
-        className="pointer-events-none absolute inset-0 -z-20 h-full w-full object-cover"
+        className="pointer-events-none absolute inset-0 z-0 h-full w-full object-cover"
         aria-hidden="true"
       />
       {/* Dark scrim + gold glow so the copy stays readable over the footage */}
       <div
-        className="pointer-events-none absolute inset-0 -z-10"
+        className="pointer-events-none absolute inset-0 z-0"
         style={{
           background:
             "linear-gradient(90deg, oklch(0.13 0.008 60 / 0.88) 0%, oklch(0.13 0.008 60 / 0.6) 40%, oklch(0.13 0.008 60 / 0.25) 100%), radial-gradient(60% 50% at 70% 20%, oklch(0.8 0.14 82 / 0.18), transparent 70%)",
         }}
         aria-hidden="true"
       />
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px-8 lg:py-24">
+      <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px-8 lg:py-24">
         <div className="flex flex-col items-start gap-6">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-medium text-primary">
             <Sparkles className="h-3.5 w-3.5" />
