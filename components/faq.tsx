@@ -5,9 +5,11 @@ export function Faq({ dict }: { dict: Dictionary }) {
   return (
     <section id="faq" className="border-t border-border bg-card/40">
       <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-        <div className="text-center">
-          <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl">{t.heading}</h2>
-          <p className="mt-4 text-lg text-muted-foreground text-pretty">{t.subtitle}</p>
+        <div className="flex justify-center">
+          <div className="section-heading max-w-2xl">
+            <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl">{t.heading}</h2>
+            <p className="text-lg text-muted-foreground text-pretty">{t.subtitle}</p>
+          </div>
         </div>
 
         <div className="mt-10 flex flex-col gap-4">

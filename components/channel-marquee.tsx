@@ -135,12 +135,14 @@ export function ChannelMarquee({ lang }: { lang: Locale }) {
   return (
     <section className="border-y border-border bg-background/30 py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center gap-4 text-center">
-          <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl">
-            {t.title}
-            <span className="text-primary"> {t.accent}</span>
-          </h2>
-          <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground text-pretty">{t.subtitle}</p>
+        <div className="flex justify-center">
+          <div className="section-heading max-w-2xl">
+            <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl">
+              {t.title}
+              <span className="text-primary"> {t.accent}</span>
+            </h2>
+            <p className="text-lg leading-relaxed text-muted-foreground text-pretty">{t.subtitle}</p>
+          </div>
         </div>
       </div>
 

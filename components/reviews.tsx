@@ -92,16 +92,18 @@ export function Reviews({ lang }: { lang: Locale }) {
   return (
     <section id="reviews" className="border-y border-border bg-card/40 py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center gap-4 text-center">
-          <div className="flex items-center gap-2">
-            <Stars />
-            <span className="text-sm font-semibold text-foreground">4.9 / 5</span>
+        <div className="flex justify-center">
+          <div className="section-heading max-w-2xl">
+            <div className="flex items-center gap-2">
+              <Stars />
+              <span className="text-sm font-semibold text-foreground">4.9 / 5</span>
+            </div>
+            <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl">
+              {t.title}
+              <span className="text-primary"> {t.accent}</span>
+            </h2>
+            <p className="text-lg leading-relaxed text-muted-foreground text-pretty">{t.subtitle}</p>
           </div>
-          <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl">
-            {t.title}
-            <span className="text-primary"> {t.accent}</span>
-          </h2>
-          <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground text-pretty">{t.subtitle}</p>
         </div>
       </div>
 

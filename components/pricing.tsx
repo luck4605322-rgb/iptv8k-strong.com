@@ -1,5 +1,4 @@
 import { Check } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { whatsappWith } from "@/lib/contact"
 import type { Dictionary } from "@/lib/i18n"
 import type { Locale } from "@/lib/i18n"
@@ -92,11 +91,14 @@ function Card({
           </li>
         ))}
       </ul>
-      <Button asChild className="btn-gradient mt-8 w-full font-semibold">
-        <a href={orderHref} target="_blank" rel="noopener noreferrer">
-          {cta}
-        </a>
-      </Button>
+      <a
+        href={orderHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn-gradient mt-8 inline-flex h-11 w-full items-center justify-center rounded-xl font-semibold"
+      >
+        {cta}
+      </a>
     </div>
   )
 }
@@ -108,9 +110,11 @@ export function Pricing({ dict, lang }: { dict: Dictionary; lang: Locale }) {
 
   return (
     <section id="pricing" className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div className="mx-auto max-w-2xl text-center">
-        <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl">{t.heading}</h2>
-        <p className="mt-4 text-lg text-muted-foreground text-pretty">{t.subtitle}</p>
+      <div className="flex justify-center">
+        <div className="section-heading max-w-2xl">
+          <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl">{t.heading}</h2>
+          <p className="text-lg text-muted-foreground text-pretty">{t.subtitle}</p>
+        </div>
       </div>
 
       {/* Personal plans */}

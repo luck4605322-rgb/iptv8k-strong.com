@@ -283,3 +283,40 @@
     animation: none;
   }
 }
+
+/* Bordered heading card with hover glow + lift */
+.section-heading {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  background: color-mix(in oklab, var(--card) 55%, transparent);
+  padding: 2rem 2.75rem;
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    background-color 0.35s ease;
+  will-change: transform;
+}
+
+.section-heading:hover {
+  transform: translateY(-6px);
+  border-color: color-mix(in oklab, var(--primary) 75%, transparent);
+  background: color-mix(in oklab, var(--card) 80%, transparent);
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--primary) 45%, transparent),
+    0 16px 48px color-mix(in oklab, var(--primary) 22%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-heading {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .section-heading:hover {
+    transform: none;
+  }
+}

@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { Logo } from "@/components/logo"
 import { ContactButtons } from "@/components/contact-buttons"
 import { contact, whatsappWith } from "@/lib/contact"
@@ -21,11 +20,14 @@ export function SiteFooter({ lang, dict }: { lang: Locale; dict: Dictionary }) {
           <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl">{dict.cta.heading}</h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-muted-foreground text-pretty">{dict.cta.paragraph}</p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-            <Button asChild size="lg" className="btn-gradient text-base font-semibold">
-              <a href={whatsappWith("Hi STRONG 8K, I'd like to start a free trial.")} target="_blank" rel="noopener noreferrer">
-                {dict.cta.startTrial}
-              </a>
-            </Button>
+            <a
+              href={whatsappWith("Hi STRONG 8K, I'd like to start a free trial.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-gradient inline-flex h-12 items-center justify-center rounded-xl px-7 text-base font-semibold shadow-lg shadow-primary/20"
+            >
+              {dict.cta.startTrial}
+            </a>
           </div>
           <p className="mt-6 text-sm font-medium text-muted-foreground">{dict.cta.contact}</p>
           <ContactButtons className="mt-4" />

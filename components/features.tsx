@@ -31,11 +31,13 @@ export function Features({ dict }: { dict: Dictionary }) {
         ))}
       </div>
 
-      <div className="mx-auto mt-20 max-w-2xl text-center">
-        <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl">
-          {dict.features.heading}
-        </h2>
-        <p className="mt-4 text-lg text-muted-foreground text-pretty">{dict.features.subtitle}</p>
+      <div className="mt-20 flex justify-center">
+        <div className="section-heading max-w-2xl">
+          <h2 className="font-display text-3xl font-bold tracking-tight text-balance sm:text-4xl">
+            {dict.features.heading}
+          </h2>
+          <p className="text-lg text-muted-foreground text-pretty">{dict.features.subtitle}</p>
+        </div>
       </div>
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

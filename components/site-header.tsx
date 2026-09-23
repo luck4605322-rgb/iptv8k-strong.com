@@ -3,7 +3,6 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { Logo } from "@/components/logo"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { whatsappWith } from "@/lib/contact"
@@ -40,11 +39,14 @@ export function SiteHeader({ lang, dict }: { lang: Locale; dict: Dictionary }) {
 
         <div className="hidden items-center gap-3 md:flex">
           <LanguageSwitcher lang={lang} label={dict.nav.selectLanguage} />
-          <Button asChild className="btn-gradient text-sm font-semibold">
-            <a href={whatsappWith("Hi STRONG 8K, I'd like to subscribe.")} target="_blank" rel="noopener noreferrer">
-              {dict.nav.subscribe}
-            </a>
-          </Button>
+          <a
+            href={whatsappWith("Hi STRONG 8K, I'd like to subscribe.")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-gradient inline-flex h-10 items-center justify-center rounded-xl px-5 text-sm font-semibold"
+          >
+            {dict.nav.subscribe}
+          </a>
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
@@ -75,11 +77,14 @@ export function SiteHeader({ lang, dict }: { lang: Locale; dict: Dictionary }) {
               </a>
             ))}
             <div className="mt-2 flex flex-col gap-2">
-              <Button asChild className="btn-gradient font-semibold">
-                <a href={whatsappWith("Hi STRONG 8K, I'd like to subscribe.")} target="_blank" rel="noopener noreferrer">
-                  {dict.nav.subscribe}
-                </a>
-              </Button>
+              <a
+                href={whatsappWith("Hi STRONG 8K, I'd like to subscribe.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-gradient inline-flex h-11 items-center justify-center rounded-xl px-5 font-semibold"
+              >
+                {dict.nav.subscribe}
+              </a>
             </div>
           </nav>
         </div>
