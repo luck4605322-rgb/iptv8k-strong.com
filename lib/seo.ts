@@ -7,7 +7,7 @@ export const siteConfig = {
   legalName: "STRONG 8K IPTV",
   // No trailing slash.
   siteUrl: (process.env.NEXT_PUBLIC_SITE_URL || "https://strong8k.com").replace(/\/$/, ""),
-  title: "STRONG 8K | Premium IPTV Subscription & Reseller Panel in Europe",
+  title: "IPTV Subscription & Reseller Panel in Europe | STRONG 8K",
   shortTitle: "STRONG 8K IPTV",
   description:
     "STRONG 8K is a premium European IPTV service with 20,000+ live channels and 120,000+ movies & series in stable 4K/8K Ultra HD. Buy an IPTV subscription or start reselling with our dedicated IPTV reseller panel. Works on Smart TV, Firestick, Android, iOS, MAG and more.",

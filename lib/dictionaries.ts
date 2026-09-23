@@ -57,7 +57,7 @@ export type Dictionary = {
 
 const en: Dictionary = {
   meta: {
-    title: "STRONG 8K | Premium IPTV Subscription & Reseller Panel in Europe",
+    title: "IPTV Subscription & Reseller Panel in Europe | STRONG 8K",
     description:
       "STRONG 8K is a premium European IPTV service with 60,000+ live channels and 200,000+ movies & series in stable 4K/8K Ultra HD. Buy an IPTV subscription or start reselling with our dedicated IPTV reseller panel.",
   },
@@ -157,7 +157,7 @@ const en: Dictionary = {
 
 const de: Dictionary = {
   meta: {
-    title: "STRONG 8K | Premium IPTV-Abo & Reseller-Panel in Europa",
+    title: "IPTV-Abo & Reseller-Panel in Europa | STRONG 8K",
     description:
       "STRONG 8K ist ein Premium-IPTV-Dienst für Europa mit über 60.000 Live-Sendern und 200.000+ Filmen & Serien in stabilem 4K/8K Ultra HD. Kaufe ein IPTV-Abo oder starte den Wiederverkauf mit unserem eigenen IPTV-Reseller-Panel.",
   },
@@ -257,7 +257,7 @@ const de: Dictionary = {
 
 const fr: Dictionary = {
   meta: {
-    title: "STRONG 8K | Abonnement IPTV Premium & Panel Revendeur en Europe",
+    title: "Abonnement IPTV & Panel Revendeur en Europe | STRONG 8K",
     description:
       "STRONG 8K est un service IPTV premium européen avec plus de 60 000 chaînes en direct et 200 000+ films et séries en 4K/8K Ultra HD stable. Achetez un abonnement IPTV ou lancez-vous dans la revente avec notre panel revendeur dédié.",
   },
@@ -357,7 +357,7 @@ const fr: Dictionary = {
 
 const es: Dictionary = {
   meta: {
-    title: "STRONG 8K | Suscripción IPTV Premium y Panel de Revendedor en Europa",
+    title: "Suscripción IPTV y Panel de Revendedor | STRONG 8K",
     description:
       "STRONG 8K es un servicio IPTV premium europeo con más de 60.000 canales en directo y 200.000+ películas y series en 4K/8K Ultra HD estable. Compra una suscripción IPTV o empieza a revender con nuestro panel de revendedor dedicado.",
   },
@@ -457,7 +457,7 @@ const es: Dictionary = {
 
 const it: Dictionary = {
   meta: {
-    title: "STRONG 8K | Abbonamento IPTV Premium e Pannello Rivenditore in Europa",
+    title: "Abbonamento IPTV e Pannello Rivenditore | STRONG 8K",
     description:
       "STRONG 8K è un servizio IPTV premium europeo con oltre 60.000 canali live e 200.000+ film e serie in 4K/8K Ultra HD stabile. Acquista un abbonamento IPTV o inizia a rivendere con il nostro pannello rivenditore dedicato.",
   },
@@ -557,7 +557,7 @@ const it: Dictionary = {
 
 const pt: Dictionary = {
   meta: {
-    title: "STRONG 8K | Assinatura IPTV Premium e Painel de Revenda na Europa",
+    title: "Assinatura IPTV e Painel de Revenda na Europa | STRONG 8K",
     description:
       "STRONG 8K é um serviço IPTV premium europeu com mais de 60.000 canais ao vivo e 200.000+ filmes e séries em 4K/8K Ultra HD estável. Compre uma assinatura IPTV ou comece a revender com o nosso painel de revenda dedicado.",
   },
@@ -657,7 +657,7 @@ const pt: Dictionary = {
 
 const nl: Dictionary = {
   meta: {
-    title: "STRONG 8K | Premium IPTV-abonnement & Reseller-paneel in Europa",
+    title: "IPTV-abonnement & Reseller-paneel in Europa | STRONG 8K",
     description:
       "STRONG 8K is een premium Europese IPTV-dienst met 60.000+ live kanalen en 200.000+ films en series in stabiel 4K/8K Ultra HD. Koop een IPTV-abonnement of begin met doorverkopen via ons eigen IPTV-reseller-paneel.",
   },
@@ -757,7 +757,7 @@ const nl: Dictionary = {
 
 const pl: Dictionary = {
   meta: {
-    title: "STRONG 8K | Premium abonament IPTV i panel resellera w Europie",
+    title: "Abonament IPTV i panel resellera w Europie | STRONG 8K",
     description:
       "STRONG 8K to premium europejska usługa IPTV z ponad 60 000 kanałów na żywo i 200 000+ filmów i seriali w stabilnym 4K/8K Ultra HD. Kup abonament IPTV lub zacznij odsprzedaż dzięki naszemu dedykowanemu panelowi resellera.",
   },
@@ -857,7 +857,7 @@ const pl: Dictionary = {
 
 const sv: Dictionary = {
   meta: {
-    title: "STRONG 8K | Premium IPTV-abonnemang & återförsäljarpanel i Europa",
+    title: "IPTV-abonnemang & återförsäljarpanel | STRONG 8K",
     description:
       "STRONG 8K är en premium europeisk IPTV-tjänst med över 60 000 livekanaler och 200 000+ filmer och serier i stabil 4K/8K Ultra HD. Köp ett IPTV-abonnemang eller börja återförsälja med vår dedikerade IPTV-återförsäljarpanel.",
   },
@@ -957,7 +957,7 @@ const sv: Dictionary = {
 
 const ro: Dictionary = {
   meta: {
-    title: "STRONG 8K | Abonament IPTV Premium și Panou de Reseller în Europa",
+    title: "Abonament IPTV și Panou de Reseller în Europa | STRONG 8K",
     description:
       "STRONG 8K este un serviciu IPTV premium european cu peste 60.000 de canale live și 200.000+ filme și seriale în 4K/8K Ultra HD stabil. Cumpără un abonament IPTV sau începe revânzarea cu panoul nostru dedicat de reseller.",
   },
@@ -1057,7 +1057,7 @@ const ro: Dictionary = {
 
 const el: Dictionary = {
   meta: {
-    title: "STRONG 8K | Premium Συνδρομή IPTV & Πάνελ Μεταπωλητή στην Ευρώπη",
+    title: "Συνδρομή IPTV & Πάνελ Μεταπωλητή | STRONG 8K",
     description:
       "Το STRONG 8K είναι μια premium ευρωπαϊκή υπηρεσία IPTV με 60.000+ ζωντανά κανάλια και 200.000+ ταινίες και σειρές σε σταθερό 4K/8K Ultra HD. Αγοράστε συνδρομή IPTV ή ξεκινήστε τη μεταπώληση με το ειδικό μας πάνελ μεταπωλητή.",
   },
@@ -1077,7 +1077,7 @@ const el: Dictionary = {
     titleLine1: "Premium συνδρομή IPTV",
     titleLine2: "με καθαρότητα STRONG 8K",
     paragraph:
-      "Η premium ευρωπαϊκή υπηρεσία IPTV: πάνω από 60.000 ζωντανά κανάλια και 200.000 ταινίες και σειρές κατ' απαίτηση σε 4K/8K Ultra HD — αθλητικά, σινεμά κα�� εκπομπές από όλη την Ευρώπη και τον κόσμο. Διακομιστές anti-freeze, υποστήριξη κάθε συσκευής και ειδικό πάνελ μεταπωλητή IPTV. Ξεκινήστε την παρακολούθηση σε λεπτά.",
+      "Η premium ευρωπαϊκή υπηρεσία IPTV: πάνω από 60.000 ζωντανά κανάλια και 200.000 ταινίες και σειρές κατ' απαίτηση σε 4K/8K Ultra HD — αθλητικά, σινεμά κα���� εκπομπές από όλη την Ευρώπη και τον κόσμο. Διακομιστές anti-freeze, υποστήριξη κάθε συσκευής και ειδικό πάνελ μεταπωλητή IPTV. Ξεκινήστε την παρακολούθηση σε λεπτά.",
     trial: "Δωρεάν δοκιμή 24 ωρών",
     viewPlans: "Δείτε τα πλάνα",
     bullets: ["Άμεση ενεργοποίηση", "99,9% διαθεσιμότητα", "Χωρίς δέσμευση"],
@@ -1157,7 +1157,7 @@ const el: Dictionary = {
 
 const ru: Dictionary = {
   meta: {
-    title: "STRONG 8K | Премиум IPTV-подписка и панель реселлера в Европе",
+    title: "IPTV-подписка и панель реселлера в Европе | STRONG 8K",
     description:
       "STRONG 8K — премиальный европейский IPTV-сервис с более чем 60 000 прямых каналов и 200 000+ фильмов и сериалов в стабильном 4K/8K Ultra HD. Купите IPTV-подписку или начните перепродажу с нашей выделенной панелью реселлера.",
   },
