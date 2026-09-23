@@ -13,10 +13,10 @@ export function Logo({
       <Image
         src="/logo-badge.png"
         alt="STRONG 8K"
-        width={48}
-        height={48}
+        width={232}
+        height={246}
         priority
-        className="h-11 w-11 shrink-0 object-contain"
+        className="-my-2 h-14 w-auto shrink-0 object-contain"
       />
 
       {showWordmark && (
