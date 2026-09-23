@@ -25,19 +25,22 @@ export const ogLocaleMap: Record<Locale, string> = {
 }
 
 // Human-readable label + flag for the language switcher.
-export const localeMeta: Record<Locale, { label: string; flag: string }> = {
-  en: { label: "English", flag: "🇬🇧" },
-  de: { label: "Deutsch", flag: "🇩🇪" },
-  fr: { label: "Français", flag: "🇫🇷" },
-  es: { label: "Español", flag: "🇪🇸" },
-  it: { label: "Italiano", flag: "🇮🇹" },
-  pt: { label: "Português", flag: "🇵🇹" },
-  nl: { label: "Nederlands", flag: "🇳🇱" },
-  pl: { label: "Polski", flag: "🇵🇱" },
-  sv: { label: "Svenska", flag: "🇸🇪" },
-  ro: { label: "Română", flag: "🇷🇴" },
-  el: { label: "Ελληνικά", flag: "🇬🇷" },
-  ru: { label: "Русский", flag: "🇷🇺" },
+// `country` is the ISO 3166-1 alpha-2 code used by flag-icons (SVG flags),
+// which render consistently across OSes — unlike emoji flags that Windows
+// downgrades to plain letters (e.g. "DE" instead of the German flag).
+export const localeMeta: Record<Locale, { label: string; flag: string; country: string }> = {
+  en: { label: "English", flag: "🇬🇧", country: "gb" },
+  de: { label: "Deutsch", flag: "🇩🇪", country: "de" },
+  fr: { label: "Français", flag: "🇫🇷", country: "fr" },
+  es: { label: "Español", flag: "🇪🇸", country: "es" },
+  it: { label: "Italiano", flag: "🇮🇹", country: "it" },
+  pt: { label: "Português", flag: "🇵🇹", country: "pt" },
+  nl: { label: "Nederlands", flag: "🇳🇱", country: "nl" },
+  pl: { label: "Polski", flag: "🇵🇱", country: "pl" },
+  sv: { label: "Svenska", flag: "🇸🇪", country: "se" },
+  ro: { label: "Română", flag: "🇷🇴", country: "ro" },
+  el: { label: "Ελληνικά", flag: "🇬🇷", country: "gr" },
+  ru: { label: "Русский", flag: "🇷🇺", country: "ru" },
 }
 
 export function isLocale(value: string): value is Locale {

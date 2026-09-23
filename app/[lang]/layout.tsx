@@ -15,6 +15,7 @@ import {
   type Locale,
 } from "@/lib/i18n"
 import "../globals.css"
+import "flag-icons/css/flag-icons.min.css"
 
 const oswald = Oswald({ subsets: ["latin"], variable: "--font-oswald" })
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })

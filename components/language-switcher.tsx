@@ -54,7 +54,7 @@ export function LanguageSwitcher({
         aria-label={label}
       >
         <Globe className="h-4 w-4 text-primary" />
-        <span className="hidden sm:inline">{current.flag}</span>
+        <span className={`fi fi-${current.country} hidden rounded-sm sm:inline`} aria-hidden="true" />
         <span>{lang.toUpperCase()}</span>
         <ChevronDown className={`h-4 w-4 text-muted-foreground transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
@@ -78,7 +78,7 @@ export function LanguageSwitcher({
                     active ? "bg-primary/10 text-primary" : "text-popover-foreground hover:bg-secondary"
                   }`}
                 >
-                  <span className="text-base leading-none">{meta.flag}</span>
+                  <span className={`fi fi-${meta.country} rounded-sm`} aria-hidden="true" />
                   <span className="flex-1">{meta.label}</span>
                   {active && <Check className="h-4 w-4" />}
                 </Link>
