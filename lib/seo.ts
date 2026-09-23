@@ -6,7 +6,7 @@ export const siteConfig = {
   name: "STRONG 8K",
   legalName: "STRONG 8K IPTV",
   // No trailing slash.
-  siteUrl: (process.env.NEXT_PUBLIC_SITE_URL || "https://strong8k.com").replace(/\/$/, ""),
+  siteUrl: (process.env.NEXT_PUBLIC_SITE_URL || "https://iptv8k-strong.com").replace(/\/$/, ""),
   title: "IPTV Subscription & Reseller Panel in Europe | STRONG 8K",
   shortTitle: "STRONG 8K IPTV",
   description:
