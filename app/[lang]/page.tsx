@@ -5,6 +5,7 @@ import { Features } from "@/components/features"
 import { Showcase } from "@/components/showcase"
 import { ContentMarquee } from "@/components/content-marquee"
 import { ProviderMarquee } from "@/components/provider-marquee"
+import { ChannelMarquee } from "@/components/channel-marquee"
 import { Reviews } from "@/components/reviews"
 import { WhatsAppProof } from "@/components/whatsapp-proof"
 import { Pricing } from "@/components/pricing"
@@ -35,6 +36,7 @@ export default async function Page({
         <Showcase dict={dict} />
         <ContentMarquee lang={locale} />
         <ProviderMarquee lang={locale} />
+        <ChannelMarquee lang={locale} />
         <Reviews lang={locale} />
         <WhatsAppProof lang={locale} />
         <Pricing dict={dict} lang={locale} />
