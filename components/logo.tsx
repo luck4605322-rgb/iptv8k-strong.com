@@ -16,7 +16,7 @@ export function Logo({
         width={48}
         height={48}
         priority
-        className="h-11 w-11 shrink-0 object-contain drop-shadow-[0_2px_10px_oklch(0.62_0.24_0/0.4)]"
+        className="h-11 w-11 shrink-0 object-contain"
       />
 
       {showWordmark && (
