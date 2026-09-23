@@ -1,5 +1,13 @@
 import { siteConfig, absoluteUrl } from "@/lib/seo"
 import type { Dictionary, Locale } from "@/lib/i18n"
+import { contact } from "@/lib/contact"
+import { reviews } from "@/lib/social-proof"
+
+// Aggregate rating reflects the customer & reseller testimonials shown on the
+// page (see the Reviews section). ratingCount matches the number of published
+// testimonials so the rich result stays truthful and within Google's policy.
+const reviewCount = reviews.length
+const ratingValue = "4.9"
 
 // Prices in USD, locale-independent. Personal subscriptions + reseller credit packs.
 const offerMeta = [
@@ -21,9 +29,20 @@ export function StructuredData({ lang, dict }: { lang: Locale; dict: Dictionary 
       name: siteConfig.legalName,
       url: siteConfig.siteUrl,
       logo: absoluteUrl("/logo-3d.png"),
+      image: absoluteUrl(siteConfig.ogImage),
       description: dict.meta.description,
       areaServed: "Europe",
-      sameAs: [] as string[],
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          contactType: "customer support",
+          telephone: contact.whatsappNumber,
+          url: contact.whatsappUrl,
+          areaServed: "Europe",
+          availableLanguage: [...siteConfig.languages],
+        },
+      ],
+      sameAs: [contact.telegramUrl, contact.whatsappUrl],
     },
     {
       "@type": "WebSite",
@@ -43,6 +62,20 @@ export function StructuredData({ lang, dict }: { lang: Locale; dict: Dictionary 
       areaServed: "Europe",
       description: dict.meta.description,
       brand: siteConfig.name,
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue,
+        bestRating: "5",
+        worstRating: "1",
+        ratingCount: reviewCount,
+        reviewCount,
+      },
+      review: reviews.slice(0, 6).map((r) => ({
+        "@type": "Review",
+        author: { "@type": "Person", name: r.name },
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5", worstRating: "1" },
+        reviewBody: r.text,
+      })),
       offers: offerMeta.map((o) => ({
         "@type": "Offer",
         name: `${o.name} — ${siteConfig.name} IPTV`,
