@@ -1,6 +1,6 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { Logo } from "@/components/logo"
 import { ContactButtons } from "@/components/contact-buttons"
 import { contact, whatsappWith } from "@/lib/contact"
 import type { Dictionary, Locale } from "@/lib/i18n"
@@ -34,11 +34,8 @@ export function SiteFooter({ lang, dict }: { lang: Locale; dict: Dictionary }) {
 
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-4 py-10 sm:px-6 lg:flex-row lg:px-8">
-          <Link href={`/${lang}`} className="flex items-center gap-2" aria-label={dict.nav.home}>
-            <Image src="/icon.svg" alt="" width={28} height={28} className="h-7 w-7" />
-            <span className="font-display text-lg font-bold tracking-wide">
-              STRONG <span className="text-primary">8K</span>
-            </span>
+          <Link href={`/${lang}`} aria-label={dict.nav.home}>
+            <Logo />
           </Link>
           <nav
             className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground"

@@ -1,10 +1,10 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Logo } from "@/components/logo"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { whatsappWith } from "@/lib/contact"
 import type { Dictionary, Locale } from "@/lib/i18n"
@@ -22,11 +22,8 @@ export function SiteHeader({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href={`/${lang}`} className="flex items-center gap-2" aria-label={dict.nav.home}>
-          <Image src="/icon.svg" alt="" width={32} height={32} className="h-8 w-8" />
-          <span className="font-display text-xl font-bold tracking-wide">
-            STRONG <span className="text-primary">8K</span>
-          </span>
+        <Link href={`/${lang}`} aria-label={dict.nav.home}>
+          <Logo />
         </Link>
 
         <nav className="hidden items-center gap-3 md:flex" aria-label="Main navigation">
