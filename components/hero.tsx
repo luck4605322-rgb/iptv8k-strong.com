@@ -1,5 +1,4 @@
 import { PlayCircle, Sparkles } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { whatsappWith } from "@/lib/contact"
 import type { Dictionary } from "@/lib/i18n"
 
@@ -29,15 +28,21 @@ export function Hero({ dict }: { dict: Dictionary }) {
           </h1>
           <p className="max-w-xl text-lg leading-relaxed text-muted-foreground text-pretty">{t.paragraph}</p>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button asChild size="lg" className="btn-gradient gap-2 text-base font-semibold">
-              <a href={whatsappWith("Hi STRONG 8K, I'd like to start a free trial.")} target="_blank" rel="noopener noreferrer">
-                <PlayCircle className="h-5 w-5" />
-                {t.trial}
-              </a>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="btn-gradient-outline border-primary/60 text-base font-semibold">
-              <a href="#pricing">{t.viewPlans}</a>
-            </Button>
+            <a
+              href={whatsappWith("Hi STRONG 8K, I'd like to start a free trial.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-gradient inline-flex h-12 items-center justify-center gap-2.5 rounded-xl px-7 text-base font-semibold shadow-lg shadow-primary/20 [&_svg]:size-5"
+            >
+              <PlayCircle />
+              {t.trial}
+            </a>
+            <a
+              href="#pricing"
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-xl border border-primary/50 bg-primary/5 px-7 text-base font-semibold text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+            >
+              {t.viewPlans}
+            </a>
           </div>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-sm text-muted-foreground">
             {t.bullets.map((b) => (
