@@ -20,10 +20,24 @@ export function Logo({
       />
 
       {showWordmark && (
-        <span className="flex items-baseline gap-1.5 font-display text-2xl font-extrabold tracking-tight">
-          <span className="text-foreground">STRONG</span>
-          <span className="rounded-md bg-primary px-1.5 py-0.5 text-xl leading-none text-primary-foreground">
-            8K
+        <span className="flex items-center gap-2 font-display text-2xl font-extrabold tracking-tight">
+          <span className="brand-gold">STRONG</span>
+
+          {/* 8K inside a retro TV frame */}
+          <span className="tv-frame relative inline-flex flex-col items-center leading-none">
+            <span aria-hidden className="flex h-2 items-end justify-center gap-1.5">
+              <span className="tv-antenna h-2 origin-bottom -rotate-[28deg]" />
+              <span className="tv-antenna h-2 origin-bottom rotate-[28deg]" />
+            </span>
+            <span className="tv-body p-[3px]">
+              <span className="tv-screen brand-gold block px-1.5 py-0.5 text-lg font-extrabold leading-none">
+                8K
+              </span>
+            </span>
+            <span aria-hidden className="mt-[1px] flex w-full items-center justify-between px-1">
+              <span className="tv-foot" />
+              <span className="tv-foot" />
+            </span>
           </span>
         </span>
       )}
