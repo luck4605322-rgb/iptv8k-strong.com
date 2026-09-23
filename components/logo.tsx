@@ -30,7 +30,7 @@ export function Logo({
               <span className="tv-antenna h-2 origin-bottom rotate-[28deg]" />
             </span>
             <span className="tv-body p-[3px]">
-              <span className="tv-screen brand-gold block px-1.5 py-0.5 text-lg font-extrabold leading-none">
+              <span className="tv-screen tv-8k block px-1.5 py-0.5 text-lg font-extrabold leading-none">
                 8K
               </span>
             </span>

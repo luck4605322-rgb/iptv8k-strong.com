@@ -314,3 +314,12 @@
   border-radius: 0 0 2px 2px;
   background: linear-gradient(180deg, var(--tv-gold), var(--tv-gold-dark));
 }
+
+/* Bright gold "8K" on the TV screen — high contrast against the dark screen */
+.tv-8k {
+  color: #ffd85e;
+  text-shadow:
+    0 0 6px rgba(255, 200, 70, 0.65),
+    0 1px 0 rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.02em;
+}
