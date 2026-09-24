@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: 'export', // 开启静态导出
   images: {
-    unoptimized: true,
+    unoptimized: true, // 禁用 Next.js 图片优化服务，避免静态导出报错
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;
