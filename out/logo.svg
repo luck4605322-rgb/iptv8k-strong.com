@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="100%" height="100%">
+  <defs>
+    <!-- 奢华金属黄金渐变 -->
+    <linearGradient id="gold-metallic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE58F" />
+      <stop offset="25%" stop-color="#E6B800" />
+      <stop offset="50%" stop-color="#FFF1B8" />
+      <stop offset="75%" stop-color="#D49B00" />
+      <stop offset="100%" stop-color="#996D00" />
+    </linearGradient>
+    
+    <linearGradient id="gold-text" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFE89C"/>
+      <stop offset="50%" stop-color="#F5C443"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+
+    <!-- 辉光霓虹滤镜 -->
+    <filter id="gold-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- 左侧：TV + 8K 图标主体 -->
+  <g transform="translate(10, 12)">
+    <!-- 天线部分 -->
+    <line x1="42" y1="36" x2="18" y2="10" stroke="url(#gold-metallic)" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="16" cy="8" r="4.5" fill="url(#gold-metallic)"/>
+    
+    <line x1="58" y1="36" x2="88" y2="4" stroke="url(#gold-metallic)" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="90" cy="2" r="5.5" fill="url(#gold-metallic)"/>
+
+    <!-- 电视机外框主体 -->
+    <path d="M 15,36 
+             C 50,28 80,32 105,36 
+             C 112,37 115,42 115,50 
+             L 115,82 
+             C 115,90 108,95 100,95 
+             C 70,98 40,96 15,93 
+             C 8,92 5,86 5,78 
+             L 5,50 
+             C 5,42 8,37 15,36 Z" 
+          fill="none" stroke="url(#gold-metallic)" stroke-width="6" filter="url(#gold-glow)"/>
+
+    <!-- 右侧重叠双弧线 (力量感/侧边把手) -->
+    <path d="M 115,42 C 128,45 128,85 115,88" fill="none" stroke="url(#gold-metallic)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 127,52 C 135,55 135,75 127,78" fill="none" stroke="url(#gold-metallic)" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- 屏幕内部 8K 字样 -->
+    <text x="56" y="74" font-family="'Arial Black', 'Impact', sans-serif" font-weight="900" font-size="34" fill="url(#gold-metallic)" text-anchor="middle" letter-spacing="-1">8K</text>
+  </g>
+
+  <!-- 右侧：品牌文字部分 -->
+  <g transform="translate(160, 0)">
+    <text x="0" y="65" font-family="'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="42" fill="#FFFFFF" letter-spacing="1">STRONG</text>
+    <text x="210" y="65" font-family="'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="42" fill="url(#gold-text)" filter="url(#gold-glow)">8K</text>
+    <text x="2" y="94" font-family="'Inter', sans-serif" font-weight="800" font-size="18" fill="url(#gold-text)" letter-spacing="8">IPTV STREAMING</text>
+  </g>
+</svg>
