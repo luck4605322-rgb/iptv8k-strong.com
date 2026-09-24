@@ -2,6 +2,9 @@ import type { MetadataRoute } from "next"
 import { absoluteUrl } from "@/lib/seo"
 import { locales, defaultLocale } from "@/lib/i18n"
 
+// 静态导出 (output: export) 要求元数据路由声明为静态生成。
+export const dynamic = "force-static"
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
 
