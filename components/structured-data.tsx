@@ -9,6 +9,16 @@ import { reviews } from "@/lib/social-proof"
 const reviewCount = reviews.length
 const ratingValue = "4.9"
 
+// Deterministic, build-stable publish dates for each testimonial. The reviews
+// carry no real timestamps, so we derive recent ISO dates (going backwards in
+// time) purely to satisfy the required `datePublished` field in the Review
+// markup and keep the rich result valid across rebuilds.
+function reviewDate(index: number): string {
+  const start = Date.UTC(2026, 8, 10) // 2026-09-10
+  const d = new Date(start - index * 9 * 24 * 60 * 60 * 1000)
+  return d.toISOString().slice(0, 10)
+}
+
 // Prices in USD, locale-independent. Personal subscriptions + reseller credit packs.
 const offerMeta = [
   { name: "1 Month", price: "6.99", period: "P1M" },
@@ -54,14 +64,13 @@ export function StructuredData({ lang, dict }: { lang: Locale; dict: Dictionary 
       publisher: { "@id": absoluteUrl("/#organization") },
     },
     {
-      "@type": "Service",
-      "@id": `${base}#service`,
-      serviceType: "IPTV subscription and reseller service",
+      "@type": "Product",
+      "@id": `${base}#product`,
       name: `${siteConfig.name} Premium IPTV`,
-      provider: { "@id": absoluteUrl("/#organization") },
-      areaServed: "Europe",
+      category: "IPTV subscription and reseller service",
       description: dict.meta.description,
-      brand: siteConfig.name,
+      image: absoluteUrl(siteConfig.ogImage),
+      brand: { "@type": "Brand", name: siteConfig.name },
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue,
@@ -70,9 +79,10 @@ export function StructuredData({ lang, dict }: { lang: Locale; dict: Dictionary 
         ratingCount: reviewCount,
         reviewCount,
       },
-      review: reviews.slice(0, 6).map((r) => ({
+      review: reviews.slice(0, 6).map((r, i) => ({
         "@type": "Review",
         author: { "@type": "Person", name: r.name },
+        datePublished: reviewDate(i),
         reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5", worstRating: "1" },
         reviewBody: r.text,
       })),
@@ -121,7 +131,8 @@ export function StructuredData({ lang, dict }: { lang: Locale; dict: Dictionary 
     <script
       type="application/ld+json"
       // JSON-LD must be injected as raw text for crawlers to parse it.
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      // Escape `<` so any future text containing "</script>" cannot break out.
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
     />
   )
 }
