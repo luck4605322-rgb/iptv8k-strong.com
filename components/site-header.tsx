@@ -7,17 +7,15 @@ import { Logo } from "@/components/logo"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { whatsappWith } from "@/lib/contact"
 import type { Dictionary, Locale } from "@/lib/i18n"
-import { getTrialDictionary } from "@/lib/trial-dictionary"
 
 export function SiteHeader({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   const [open, setOpen] = useState(false)
 
   const navLinks = [
-    { label: dict.nav.features, href: `/${lang}#features` },
-    { label: dict.nav.content, href: `/${lang}#content` },
-    { label: dict.nav.pricing, href: `/${lang}#pricing` },
-    { label: dict.nav.faq, href: `/${lang}#faq` },
-    { label: getTrialDictionary(lang).navLink, href: `/${lang}/free-trial` },
+    { label: dict.nav.features, href: "#features" },
+    { label: dict.nav.content, href: "#content" },
+    { label: dict.nav.pricing, href: "#pricing" },
+    { label: dict.nav.faq, href: "#faq" },
   ]
 
   return (

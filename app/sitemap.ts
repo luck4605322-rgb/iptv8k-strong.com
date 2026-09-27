@@ -15,12 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["x-default", absoluteUrl(`/${defaultLocale}`)],
   ])
 
-  const trialAlternates = Object.fromEntries([
-    ...locales.map((lang) => [lang, absoluteUrl(`/${lang}/free-trial`)]),
-    ["x-default", absoluteUrl(`/${defaultLocale}/free-trial`)],
-  ])
-
-  const homePages: MetadataRoute.Sitemap = locales.map((lang) => ({
+  return locales.map((lang) => ({
     url: absoluteUrl(`/${lang}`),
     lastModified: now,
     changeFrequency: "weekly",
@@ -29,14 +24,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
       languages: languageAlternates,
     },
   }))
-
-  const trialPages: MetadataRoute.Sitemap = locales.map((lang) => ({
-    url: absoluteUrl(`/${lang}/free-trial`),
-    lastModified: now,
-    changeFrequency: "weekly",
-    priority: 0.7,
-    alternates: { languages: trialAlternates },
-  }))
-
-  return [...homePages, ...trialPages]
 }
