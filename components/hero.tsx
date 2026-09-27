@@ -1,8 +1,7 @@
 import { PlayCircle, Sparkles } from "lucide-react"
-import { whatsappWith } from "@/lib/contact"
-import type { Dictionary } from "@/lib/i18n"
+import type { Dictionary, Locale } from "@/lib/i18n"
 
-export function Hero({ dict }: { dict: Dictionary }) {
+export function Hero({ dict, lang }: { dict: Dictionary; lang: Locale }) {
   const t = dict.hero
   return (
     <section className="relative overflow-hidden">
@@ -29,9 +28,7 @@ export function Hero({ dict }: { dict: Dictionary }) {
           <p className="max-w-xl text-lg leading-relaxed text-muted-foreground text-pretty">{t.paragraph}</p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <a
-              href={whatsappWith("Hi STRONG 8K, I'd like to start a free trial.")}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`/${lang}/free-trial`}
               className="btn-gradient inline-flex h-12 items-center justify-center gap-2.5 rounded-xl px-7 text-base font-semibold shadow-lg shadow-primary/20 [&_svg]:size-5"
             >
               <PlayCircle />

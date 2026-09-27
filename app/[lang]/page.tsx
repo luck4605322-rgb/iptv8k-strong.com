@@ -31,7 +31,7 @@ export default async function Page({
       <StructuredData lang={locale} dict={dict} />
       <SiteHeader lang={locale} dict={dict} />
       <main>
-        <Hero dict={dict} />
+        <Hero dict={dict} lang={locale} />
         <Features dict={dict} />
         <Showcase dict={dict} />
         <ContentMarquee lang={locale} />
