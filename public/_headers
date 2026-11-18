@@ -1,0 +1,62 @@
+# Cloudflare Pages cache policy for iptv8k-strong.com
+# Docs: https://developers.cloudflare.com/pages/configuration/headers/
+# Rules are applied in file order; "! Header" detaches a value added by an earlier rule.
+
+# Default: HTML and RSC payloads revalidate on every request so new deploys show up instantly.
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Images: 30 days in the browser.
+/*.png
+  ! Cache-Control
+  Cache-Control: public, max-age=2592000
+
+/*.jpg
+  ! Cache-Control
+  Cache-Control: public, max-age=2592000
+
+/*.jpeg
+  ! Cache-Control
+  Cache-Control: public, max-age=2592000
+
+/*.webp
+  ! Cache-Control
+  Cache-Control: public, max-age=2592000
+
+/*.avif
+  ! Cache-Control
+  Cache-Control: public, max-age=2592000
+
+/*.gif
+  ! Cache-Control
+  Cache-Control: public, max-age=2592000
+
+/*.svg
+  ! Cache-Control
+  Cache-Control: public, max-age=2592000
+
+/*.ico
+  ! Cache-Control
+  Cache-Control: public, max-age=2592000
+
+# Video: 30 days.
+/*.mp4
+  ! Cache-Control
+  Cache-Control: public, max-age=2592000
+
+/*.webm
+  ! Cache-Control
+  Cache-Control: public, max-age=2592000
+
+# Fonts and fingerprinted Next.js build output: cache for one year, immutable.
+/*.woff2
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.woff
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+/_next/static/*
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
