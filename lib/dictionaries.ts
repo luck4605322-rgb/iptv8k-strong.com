@@ -57,9 +57,9 @@ export type Dictionary = {
 
 const en: Dictionary = {
   meta: {
-    title: "IPTV Subscription & Reseller Panel in Europe | STRONG 8K",
+    title: "Strong 8K IPTV Official Site | Free Trial & Instant Activation",
     description:
-      "STRONG 8K is a premium European IPTV service with 60,000+ live channels and 200,000+ movies & series in stable 4K/8K Ultra HD. Buy an IPTV subscription or start reselling with our dedicated IPTV reseller panel.",
+      "Buy a Strong 8K IPTV subscription: 60,000+ live channels, 200,000+ movies, anti-freeze 4K/8K servers, instant activation, 24 hours free trial."
   },
   nav: {
     features: "Features",
@@ -73,35 +73,35 @@ const en: Dictionary = {
     selectLanguage: "Select language",
   },
   hero: {
-    badge: "The all-new 8K Ultra HD live experience",
-    titleLine1: "Premium IPTV subscription",
-    titleLine2: "in STRONG 8K clarity",
+    badge: "Strong 8K Official — 4K/8K Ultra HD live experience",
+    titleLine1: "Strong 8K IPTV subscription",
+    titleLine2: "for Firestick & Smart TV",
     paragraph:
-      "The premium European IPTV service: over 60,000 live channels and 200,000 movies & series on demand in 4K/8K Ultra HD — sports, cinema and shows from across Europe and the world. Anti-freeze servers, every device supported, plus a dedicated IPTV reseller panel. Start watching in minutes.",
+      "Strong 8K Official is the premium IPTV subscription for Firestick, Samsung & LG Smart TV, Android Box, Apple TV and MAG Box: 60,000+ live channels and 200,000+ movies & series in 4K/8K Ultra HD. Our 4K/8K anti-freeze technology and anti-buffering servers keep live streams stable at 99.9% uptime, with instant activation and a 24 hours free trial — plus a full IPTV reseller panel for resellers.",
     trial: "Free 24-hour trial",
     viewPlans: "View plans",
     bullets: ["Instant activation", "99.9% uptime", "No contract"],
-    imageAlt: "STRONG 8K streaming interface on an ultra-thin smart TV",
+    imageAlt: "Strong 8K IPTV interface on an ultra-thin smart TV",
   },
   stats: { channels: "Live channels", movies: "Movies & series", uptime: "Server uptime", support: "Customer support" },
   features: {
-    heading: "Why choose STRONG 8K IPTV",
+    heading: "Why choose Strong 8K IPTV for Firestick & Smart TV",
     subtitle:
-      "A top-tier IPTV subscription built for reliability — so you enjoy every single frame, on any device, anywhere in Europe.",
+      "A premium IPTV subscription built for stable live streams — 4K/8K anti-freeze technology, anti-buffering servers and 99.9% uptime on every device.",
     items: [
-      { title: "8K / 4K Ultra HD", desc: "High-bitrate encoding with adaptive streaming delivers cinema-grade sharpness and color." },
-      { title: "Anti-freeze servers", desc: "A high-performance node cluster spread across Europe with anti-buffering tech for smooth, lag-free playback." },
-      { title: "Global channel coverage", desc: "Sports, movies, news and kids channels from across Europe, the Americas, Asia and the Middle East." },
-      { title: "Every device", desc: "Works on Smart TV, Android, iOS, MAG, Firestick, computers and every major platform." },
-      { title: "Stable & secure", desc: "Encrypted delivery and stable routes keep every viewing session safe and reliable." },
-      { title: "Round-the-clock support", desc: "A professional technical team is online 24/7 to solve any issue you run into, fast." },
+      { title: "4K/8K Anti-Freeze Technology", desc: "High-bitrate 4K/8K encoding with adaptive streaming and anti-freeze technology keeps every match, movie and show razor sharp." },
+      { title: "Anti-Buffering Server Network", desc: "A Europe-wide cluster of anti-buffering servers keeps live streams stable at 99.9% uptime, so playback never stutters in peak hours." },
+      { title: "60,000+ Channels, 200,000+ VOD", desc: "Sports, movies, news and kids channels from Europe, the Americas, Asia and the Middle East, plus 200,000+ movies & series on demand." },
+      { title: "Works on Every Device", desc: "Strong 8K IPTV runs on Firestick, Samsung & LG Smart TV, Android Box, Apple TV, MAG Box, iOS, Android and Windows/Mac — one subscription, any screen." },
+      { title: "Instant Activation & Free Trial", desc: "Buy an IPTV subscription and stream within minutes: instant activation after checkout plus a 24 hours free trial, no contract required." },
+      { title: "Best IPTV Reseller Panel", desc: "Run your own IPTV business with our IPTV reseller panel: bulk sub-account creation, a dedicated admin dashboard and 24/7 priority support." },
     ],
   },
   showcase: {
     titleLead: "Anywhere,",
     titleAccent: "anytime",
     paragraph:
-      "Whether on the big screen in your living room or on your phone during the commute, STRONG 8K delivers the same crisp, smooth experience. With a massive content library, there is always something you will love.",
+      "Whether on the big screen in your living room or on your phone during the commute, Strong 8K Official delivers the same crisp, smooth, stable live streams. With a 200,000+ title library, there is always something you will love.",
     points: [
       "One account, one device — always sharp and stable",
       "Live sports · movies · series · kids channels",
@@ -111,7 +111,7 @@ const en: Dictionary = {
     imageAlt: "STRONG 8K playing in sync across TV, laptop, tablet and phone",
   },
   pricing: {
-    heading: "Simple, transparent pricing",
+    heading: "Buy an IPTV subscription — simple, transparent pricing",
     subtitle: "No hidden fees, no long-term contract. Upgrade or cancel anytime.",
     mostPopular: "Most popular",
     choose: "Choose",
@@ -136,13 +136,13 @@ const en: Dictionary = {
     ],
   },
   faq: {
-    heading: "Frequently asked questions",
+    heading: "IPTV FAQ — devices, subscription & free trial",
     subtitle: "Still have questions? Here are the ones users ask most.",
     items: [
-      { q: "Which devices does STRONG 8K support?", a: "It works on Smart TV, Android, iOS, MAG, Amazon Firestick, Enigma2 and Windows/Mac computers — all major devices." },
-      { q: "How soon can I watch after subscribing?", a: "Your subscription is activated instantly after payment. You will receive your login details right away and can start watching within minutes." },
-      { q: "Will there be freezing or buffering?", a: "We use globally distributed high-speed servers with anti-buffering technology, delivering smooth, freeze-free playback on a stable connection." },
-      { q: "Can I use it on multiple devices at once?", a: "No. Each account works on a single device — logging in on another device signs out the first. This applies to reseller sub-accounts too, so each end user gets one device." },
+      { q: "Which devices does Strong 8K IPTV support?", a: "It runs on Firestick, Samsung & LG Smart TV, Android Box, Apple TV, MAG Box, Android, iOS, Enigma2 and Windows/Mac — all major devices are supported out of the box." },
+      { q: "Which plans and prices does Strong 8K IPTV offer?", a: "Personal plans are $6.99 for 1 month, $22.99 for 6 months and $32.99 for 12 months; reseller credit packs are $230 / 120 credits, $440 / 240 credits and $640 / 360 credits. Prices are one-off per period in USD, with no hidden fees and no auto-renewal." },
+      { q: "Will there be freezing or buffering?", a: "Our 4K/8K anti-freeze technology and anti-buffering servers deliver smooth playback at 99.9% uptime on a stable connection." },
+      { q: "Can I use it on multiple devices at once?", a: "No. Each subscription works on a single device — logging in on another device signs out the first. This applies to reseller sub-accounts too, so every end user gets one device." },
       { q: "How do I contact support?", a: "We offer 24/7 support. Reach us anytime via live chat on the site, email or our social media channels." },
     ],
   },
@@ -157,9 +157,9 @@ const en: Dictionary = {
 
 const de: Dictionary = {
   meta: {
-    title: "IPTV-Abo & Reseller-Panel in Europa | STRONG 8K",
+    title: "Strong 8K IPTV Offiziell | Gratis-Test & Sofort-Aktivierung",
     description:
-      "STRONG 8K ist ein Premium-IPTV-Dienst für Europa mit über 60.000 Live-Sendern und 200.000+ Filmen & Serien in stabilem 4K/8K Ultra HD. Kaufe ein IPTV-Abo oder starte den Wiederverkauf mit unserem eigenen IPTV-Reseller-Panel.",
+      "Strong 8K IPTV-Abo kaufen: 60.000+ Live-Sender, 200.000+ Filme, Anti-Freeze-Server, Sofortaktivierung und 24 Stunden Gratis-Test."
   },
   nav: {
     features: "Funktionen",
@@ -240,7 +240,7 @@ const de: Dictionary = {
     subtitle: "Noch Fragen? Hier sind die häufigsten.",
     items: [
       { q: "Welche Geräte unterstützt STRONG 8K?", a: "Es läuft auf Smart-TV, Android, iOS, MAG, Amazon Firestick, Enigma2 und Windows/Mac-Computern — allen gängigen Geräten." },
-      { q: "Wie schnell kann ich nach dem Abo schauen?", a: "Dein Abo wird sofort nach der Zahlung aktiviert. Du erhältst deine Zugangsdaten umgehend und kannst innerhalb weniger Minuten starten." },
+      { q: "Welche Pakete und Preise bietet Strong 8K IPTV?", a: "Privatpakete: 6,99 $ für 1 Monat, 22,99 $ für 6 Monate, 32,99 $ für 12 Monate. Reseller-Pakete: 230 $ / 120 Credits, 440 $ / 240 Credits, 640 $ / 360 Credits. Die Preise gelten einmalig pro Zeitraum in USD, ohne versteckte Gebühren und ohne automatische Verlängerung." },
       { q: "Gibt es Einfrieren oder Buffering?", a: "Wir nutzen weltweit verteilte Highspeed-Server mit Anti-Buffering-Technik für flüssige, ruckelfreie Wiedergabe bei stabiler Verbindung." },
       { q: "Kann ich mehrere Geräte gleichzeitig nutzen?", a: "Nein. Jedes Konto funktioniert auf nur einem Gerät gleichzeitig — meldest du dich auf einem anderen Gerät an, wird das erste abgemeldet. Das gilt auch für Reseller-Unterkonten." },
       { q: "Wie erreiche ich den Support?", a: "Wir bieten 24/7-Support. Erreiche uns jederzeit per Live-Chat auf der Seite, per E-Mail oder über unsere Social-Media-Kanäle." },
@@ -257,9 +257,9 @@ const de: Dictionary = {
 
 const fr: Dictionary = {
   meta: {
-    title: "Abonnement IPTV & Panel Revendeur en Europe | STRONG 8K",
+    title: "Strong 8K IPTV Officiel | Essai Gratuit & Activation Immédiate",
     description:
-      "STRONG 8K est un service IPTV premium européen avec plus de 60 000 chaînes en direct et 200 000+ films et séries en 4K/8K Ultra HD stable. Achetez un abonnement IPTV ou lancez-vous dans la revente avec notre panel revendeur dédié.",
+      "Abonnez-vous à Strong 8K IPTV : 60 000+ chaînes live, 200 000+ films, serveurs anti-freeze, activation instantanée, essai gratuit 24 h."
   },
   nav: {
     features: "Fonctionnalités",
@@ -340,7 +340,7 @@ const fr: Dictionary = {
     subtitle: "Encore des questions ? Voici celles que les utilisateurs posent le plus.",
     items: [
       { q: "Quels appareils STRONG 8K prend-il en charge ?", a: "Il fonctionne sur Smart TV, Android, iOS, MAG, Amazon Firestick, Enigma2 et ordinateurs Windows/Mac — tous les appareils majeurs." },
-      { q: "Combien de temps avant de regarder après l'abonnement ?", a: "Votre abonnement est activé instantanément après le paiement. Vous recevez vos identifiants immédiatement et pouvez regarder en quelques minutes." },
+      { q: "Quels forfaits et tarifs propose Strong 8K IPTV ?", a: "Offres particuliers : 6,99 $ pour 1 mois, 22,99 $ pour 6 mois, 32,99 $ pour 12 mois. Offres revendeur : 230 $ / 120 crédits, 440 $ / 240 crédits, 640 $ / 360 crédits. Tarifs uniques par période, en USD, sans frais cachés ni reconduction automatique." },
       { q: "Y aura-t-il des gels ou du buffering ?", a: "Nous utilisons des serveurs haut débit répartis dans le monde avec une technologie anti-buffering, pour une lecture fluide et sans coupure sur une connexion stable." },
       { q: "Puis-je l'utiliser sur plusieurs appareils à la fois ?", a: "Non. Chaque compte fonctionne sur un seul appareil à la fois — se connecter sur un autre appareil déconnecte le premier. Cela vaut aussi pour les sous-comptes revendeur." },
       { q: "Comment contacter l'assistance ?", a: "Nous offrons une assistance 24/7. Contactez-nous à tout moment via le chat en direct du site, par e-mail ou sur nos réseaux sociaux." },
@@ -357,9 +357,9 @@ const fr: Dictionary = {
 
 const es: Dictionary = {
   meta: {
-    title: "Suscripción IPTV y Panel de Revendedor | STRONG 8K",
+    title: "Strong 8K IPTV Oficial | Prueba Gratis y Activación Instantánea",
     description:
-      "STRONG 8K es un servicio IPTV premium europeo con más de 60.000 canales en directo y 200.000+ películas y series en 4K/8K Ultra HD estable. Compra una suscripción IPTV o empieza a revender con nuestro panel de revendedor dedicado.",
+      "Compra tu suscripción Strong 8K IPTV: 60.000+ canales en vivo, 200.000+ películas, servidores anti-freeze, activación instantánea y prueba 24 h."
   },
   nav: {
     features: "Características",
@@ -440,7 +440,7 @@ const es: Dictionary = {
     subtitle: "¿Aún tienes dudas? Estas son las que más nos preguntan.",
     items: [
       { q: "¿Qué dispositivos admite STRONG 8K?", a: "Funciona en Smart TV, Android, iOS, MAG, Amazon Firestick, Enigma2 y ordenadores Windows/Mac — todos los dispositivos principales." },
-      { q: "¿Cuándo puedo ver tras suscribirme?", a: "Tu suscripción se activa al instante tras el pago. Recibes tus datos de acceso de inmediato y puedes empezar a ver en minutos." },
+      { q: "¿Qué planes y precios ofrece Strong 8K IPTV?", a: "Planes personales: 6,99 $ por 1 mes, 22,99 $ por 6 meses y 32,99 $ por 12 meses. Packs de revendedor: 230 $ / 120 créditos, 440 $ / 240 créditos y 640 $ / 360 créditos. Precios únicos por periodo, en USD, sin comisiones ocultas ni renovación automática." },
       { q: "¿Habrá cortes o buffering?", a: "Usamos servidores de alta velocidad distribuidos por todo el mundo con tecnología anti-buffering, para una reproducción fluida y sin cortes con una conexión estable." },
       { q: "¿Puedo usarlo en varios dispositivos a la vez?", a: "No. Cada cuenta funciona en un solo dispositivo a la vez; iniciar sesión en otro dispositivo cierra la sesión del primero. Esto también aplica a las subcuentas de revendedor." },
       { q: "¿Cómo contacto con soporte?", a: "Ofrecemos soporte 24/7. Contáctanos cuando quieras por el chat en directo de la web, correo o nuestras redes sociales." },
@@ -457,9 +457,9 @@ const es: Dictionary = {
 
 const it: Dictionary = {
   meta: {
-    title: "Abbonamento IPTV e Pannello Rivenditore | STRONG 8K",
+    title: "Strong 8K IPTV Ufficiale | Prova Gratis e Attivazione Immediata",
     description:
-      "STRONG 8K è un servizio IPTV premium europeo con oltre 60.000 canali live e 200.000+ film e serie in 4K/8K Ultra HD stabile. Acquista un abbonamento IPTV o inizia a rivendere con il nostro pannello rivenditore dedicato.",
+      "Acquista l'abbonamento Strong 8K IPTV: 60.000+ canali live, 200.000+ film, server anti-freeze, attivazione immediata e prova gratis 24 ore."
   },
   nav: {
     features: "Funzioni",
@@ -540,7 +540,7 @@ const it: Dictionary = {
     subtitle: "Hai ancora domande? Ecco quelle più frequenti.",
     items: [
       { q: "Quali dispositivi supporta STRONG 8K?", a: "Funziona su Smart TV, Android, iOS, MAG, Amazon Firestick, Enigma2 e computer Windows/Mac — tutti i dispositivi principali." },
-      { q: "Quanto presto posso guardare dopo l'abbonamento?", a: "L'abbonamento si attiva subito dopo il pagamento. Ricevi le credenziali immediatamente e puoi iniziare a guardare in pochi minuti." },
+      { q: "Quali piani e prezzi offre Strong 8K IPTV?", a: "Piani personali: 6,99 $ per 1 mese, 22,99 $ per 6 mesi, 32,99 $ per 12 mesi. Pacchetti rivenditore: 230 $ / 120 crediti, 440 $ / 240 crediti, 640 $ / 360 crediti. Prezzi una tantum per periodo, in USD, senza costi nascosti né rinnovo automatico." },
       { q: "Ci saranno blocchi o buffering?", a: "Usiamo server ad alta velocità distribuiti nel mondo con tecnologia anti-buffering, per una riproduzione fluida e senza blocchi su una connessione stabile." },
       { q: "Posso usarlo su più dispositivi insieme?", a: "No. Ogni account funziona su un solo dispositivo alla volta: accedere da un altro dispositivo disconnette il primo. Vale anche per i sotto-account rivenditore." },
       { q: "Come contatto l'assistenza?", a: "Offriamo assistenza 24/7. Contattaci quando vuoi tramite la live chat del sito, email o i nostri canali social." },
@@ -557,9 +557,9 @@ const it: Dictionary = {
 
 const pt: Dictionary = {
   meta: {
-    title: "Assinatura IPTV e Painel de Revenda na Europa | STRONG 8K",
+    title: "Strong 8K IPTV Oficial | Teste Grátis e Ativação Imediata",
     description:
-      "STRONG 8K é um serviço IPTV premium europeu com mais de 60.000 canais ao vivo e 200.000+ filmes e séries em 4K/8K Ultra HD estável. Compre uma assinatura IPTV ou comece a revender com o nosso painel de revenda dedicado.",
+      "Compre a assinatura Strong 8K IPTV: 60.000+ canais ao vivo, 200.000+ filmes, servidores anti-freeze, ativação imediata e teste grátis de 24 h."
   },
   nav: {
     features: "Recursos",
@@ -640,7 +640,7 @@ const pt: Dictionary = {
     subtitle: "Ainda tem dúvidas? Aqui estão as mais frequentes.",
     items: [
       { q: "Que dispositivos o STRONG 8K suporta?", a: "Funciona em Smart TV, Android, iOS, MAG, Amazon Firestick, Enigma2 e computadores Windows/Mac — todos os dispositivos principais." },
-      { q: "Quão rápido posso assistir após assinar?", a: "A sua assinatura é ativada instantaneamente após o pagamento. Recebe os dados de acesso de imediato e pode começar a assistir em minutos." },
+      { q: "Que planos e preços oferece a Strong 8K IPTV?", a: "Planos pessoais: 6,99 $ por 1 mês, 22,99 $ por 6 meses e 32,99 $ por 12 meses. Pacotes de revenda: 230 $ / 120 créditos, 440 $ / 240 créditos e 640 $ / 360 créditos. Preços únicos por período, em USD, sem taxas escondidas nem renovação automática." },
       { q: "Vai haver travamentos ou buffering?", a: "Usamos servidores de alta velocidade distribuídos pelo mundo com tecnologia anti-buffering, para reprodução fluida e sem travamentos numa ligação estável." },
       { q: "Posso usar em vários dispositivos ao mesmo tempo?", a: "Não. Cada conta funciona num único dispositivo de cada vez — entrar noutro dispositivo termina a sessão do primeiro. Aplica-se também às subcontas de revenda." },
       { q: "Como contacto o apoio?", a: "Oferecemos apoio 24/7. Fale connosco a qualquer hora pelo chat ao vivo do site, email ou as nossas redes sociais." },
@@ -657,9 +657,9 @@ const pt: Dictionary = {
 
 const nl: Dictionary = {
   meta: {
-    title: "IPTV-abonnement & Reseller-paneel in Europa | STRONG 8K",
+    title: "Strong 8K IPTV Officieel | Gratis Proef & Directe Activatie",
     description:
-      "STRONG 8K is een premium Europese IPTV-dienst met 60.000+ live kanalen en 200.000+ films en series in stabiel 4K/8K Ultra HD. Koop een IPTV-abonnement of begin met doorverkopen via ons eigen IPTV-reseller-paneel.",
+      "Koop een Strong 8K IPTV-abonnement: 60.000+ live kanalen, 200.000+ films, anti-freeze servers, directe activatie en 24 uur gratis proef."
   },
   nav: {
     features: "Functies",
@@ -740,7 +740,7 @@ const nl: Dictionary = {
     subtitle: "Nog vragen? Dit zijn de meest gestelde.",
     items: [
       { q: "Welke apparaten ondersteunt STRONG 8K?", a: "Het werkt op Smart-tv, Android, iOS, MAG, Amazon Firestick, Enigma2 en Windows/Mac-computers — alle grote apparaten." },
-      { q: "Hoe snel kan ik kijken na het abonneren?", a: "Je abonnement wordt direct na betaling geactiveerd. Je ontvangt meteen je inloggegevens en kunt binnen enkele minuten kijken." },
+      { q: "Welke pakketten en prijzen biedt Strong 8K IPTV?", a: "Persoonlijke pakketten: $6,99 voor 1 maand, $22,99 voor 6 maanden en $32,99 voor 12 maanden. Resellerpakketten: $230 / 120 credits, $440 / 240 credits en $640 / 360 credits. Prijzen gelden eenmalig per periode in USD, zonder verborgen kosten en zonder automatische verlenging." },
       { q: "Komt er bevriezing of buffering voor?", a: "We gebruiken wereldwijd verspreide highspeed-servers met anti-buffering-technologie voor vloeiend, haperingsvrij afspelen bij een stabiele verbinding." },
       { q: "Kan ik het op meerdere apparaten tegelijk gebruiken?", a: "Nee. Elk account werkt op één apparaat tegelijk — inloggen op een ander apparaat logt het eerste uit. Dit geldt ook voor reseller-subaccounts." },
       { q: "Hoe neem ik contact op met support?", a: "We bieden 24/7 support. Bereik ons altijd via de live chat op de site, e-mail of onze socialmediakanalen." },
@@ -757,9 +757,9 @@ const nl: Dictionary = {
 
 const pl: Dictionary = {
   meta: {
-    title: "Abonament IPTV i panel resellera w Europie | STRONG 8K",
+    title: "Strong 8K IPTV Oficjalne | Darmowy Test i Natychmiastowa Aktywacja",
     description:
-      "STRONG 8K to premium europejska usługa IPTV z ponad 60 000 kanałów na żywo i 200 000+ filmów i seriali w stabilnym 4K/8K Ultra HD. Kup abonament IPTV lub zacznij odsprzedaż dzięki naszemu dedykowanemu panelowi resellera.",
+      "Kup abonament Strong 8K IPTV: 60 000+ kanałów, 200 000+ filmów, serwery anti-freeze, natychmiastowa aktywacja i 24 h darmowego testu."
   },
   nav: {
     features: "Funkcje",
@@ -840,7 +840,7 @@ const pl: Dictionary = {
     subtitle: "Masz jeszcze pytania? Oto te zadawane najczęściej.",
     items: [
       { q: "Jakie urządzenia obsługuje STRONG 8K?", a: "Działa na Smart TV, Android, iOS, MAG, Amazon Firestick, Enigma2 oraz komputerach Windows/Mac — wszystkich głównych urządzeniach." },
-      { q: "Jak szybko mogę oglądać po subskrypcji?", a: "Subskrypcja jest aktywowana natychmiast po płatności. Dane logowania otrzymasz od razu i możesz zacząć oglądać w kilka minut." },
+      { q: "Jakie plany i ceny oferuje Strong 8K IPTV?", a: "Plany indywidualne: 6,99 $ za 1 miesiąc, 22,99 $ za 6 miesięcy i 32,99 $ za 12 miesięcy. Pakiety resellerskie: 230 $ / 120 kredytów, 440 $ / 240 kredytów i 640 $ / 360 kredytów. Ceny jednorazowe za okres, w USD, bez ukrytych opłat i bez automatycznego odnowienia." },
       { q: "Czy będą zacięcia lub buforowanie?", a: "Używamy rozproszonych na całym świecie szybkich serwerów z technologią anti-buffering, co zapewnia płynne odtwarzanie bez zacięć przy stabilnym łączu." },
       { q: "Czy mogę używać na kilku urządzeniach naraz?", a: "Nie. Każde konto działa na jednym urządzeniu naraz — zalogowanie na innym urządzeniu wylogowuje poprzednie. Dotyczy to także subkont resellera." },
       { q: "Jak skontaktować się ze wsparciem?", a: "Oferujemy wsparcie 24/7. Skontaktuj się z nami przez czat na żywo na stronie, e-mail lub nasze kanały społecznościowe." },
@@ -857,9 +857,9 @@ const pl: Dictionary = {
 
 const sv: Dictionary = {
   meta: {
-    title: "IPTV-abonnemang & återförsäljarpanel | STRONG 8K",
+    title: "Strong 8K IPTV Officiell | Gratis Test & Direktaktivering",
     description:
-      "STRONG 8K är en premium europeisk IPTV-tjänst med över 60 000 livekanaler och 200 000+ filmer och serier i stabil 4K/8K Ultra HD. Köp ett IPTV-abonnemang eller börja återförsälja med vår dedikerade IPTV-återförsäljarpanel.",
+      "Köp ett Strong 8K IPTV-abonnemang: 60 000+ livekanaler, 200 000+ filmer, anti-freeze-servrar, direkt aktivering och 24 timmars gratis test."
   },
   nav: {
     features: "Funktioner",
@@ -940,7 +940,7 @@ const sv: Dictionary = {
     subtitle: "Har du fortfarande frågor? Här är de vanligaste.",
     items: [
       { q: "Vilka enheter stöder STRONG 8K?", a: "Det fungerar på smart-tv, Android, iOS, MAG, Amazon Firestick, Enigma2 och Windows/Mac-datorer — alla större enheter." },
-      { q: "Hur snabbt kan jag titta efter att jag prenumererat?", a: "Ditt abonnemang aktiveras direkt efter betalning. Du får dina inloggningsuppgifter omgående och kan börja titta inom några minuter." },
+      { q: "Vilka paket och priser erbjuder Strong 8K IPTV?", a: "Privatpaket: 6,99 $ för 1 månad, 22,99 $ för 6 månader och 32,99 $ för 12 månader. Återförsäljarpaket: 230 $ / 120 krediter, 440 $ / 240 krediter och 640 $ / 360 krediter. Priserna är engångsbelopp per period i USD, utan dolda avgifter och utan automatisk förnyelse." },
       { q: "Blir det frysningar eller buffring?", a: "Vi använder globalt utspridda snabba servrar med anti-buffring-teknik, vilket ger smidig och frysfri uppspelning på en stabil anslutning." },
       { q: "Kan jag använda det på flera enheter samtidigt?", a: "Nej. Varje konto fungerar på en enhet åt gången — om du loggar in på en annan enhet loggas den första ut. Detta gäller även återförsäljares underkonton." },
       { q: "Hur kontaktar jag supporten?", a: "Vi erbjuder support 24/7. Nå oss när som helst via livechatten på sajten, e-post eller våra sociala medier." },
@@ -957,9 +957,9 @@ const sv: Dictionary = {
 
 const ro: Dictionary = {
   meta: {
-    title: "Abonament IPTV și Panou de Reseller în Europa | STRONG 8K",
+    title: "Strong 8K IPTV Oficial | Test Gratuit și Activare Instantanee",
     description:
-      "STRONG 8K este un serviciu IPTV premium european cu peste 60.000 de canale live și 200.000+ filme și seriale în 4K/8K Ultra HD stabil. Cumpără un abonament IPTV sau începe revânzarea cu panoul nostru dedicat de reseller.",
+      "Cumpără abonamentul Strong 8K IPTV: 60.000+ canale live, 200.000+ filme, servere anti-freeze, activare instantanee și test gratuit 24 de ore."
   },
   nav: {
     features: "Funcții",
@@ -1040,7 +1040,7 @@ const ro: Dictionary = {
     subtitle: "Mai ai întrebări? Iată cele mai frecvente.",
     items: [
       { q: "Ce dispozitive acceptă STRONG 8K?", a: "Funcționează pe Smart TV, Android, iOS, MAG, Amazon Firestick, Enigma2 și computere Windows/Mac — toate dispozitivele majore." },
-      { q: "Cât de repede pot viziona după abonare?", a: "Abonamentul se activează instantaneu după plată. Primești datele de acces imediat și poți începe vizionarea în câteva minute." },
+      { q: "Ce planuri și prețuri oferă Strong 8K IPTV?", a: "Planuri personale: 6,99 $ pentru 1 lună, 22,99 $ pentru 6 luni și 32,99 $ pentru 12 luni. Pachete reseller: 230 $ / 120 credite, 440 $ / 240 credite și 640 $ / 360 credite. Prețuri unice pe perioadă, în USD, fără taxe ascunse și fără reînnoire automată." },
       { q: "Vor exista blocaje sau buffering?", a: "Folosim servere rapide distribuite global, cu tehnologie anti-buffering, pentru redare fluidă și fără blocaje pe o conexiune stabilă." },
       { q: "Îl pot folosi pe mai multe dispozitive simultan?", a: "Nu. Fiecare cont funcționează pe un singur dispozitiv o dată — autentificarea pe alt dispozitiv îl deconectează pe primul. Se aplică și sub-conturilor de reseller." },
       { q: "Cum contactez asistența?", a: "Oferim asistență 24/7. Contactează-ne oricând prin chatul live de pe site, e-mail sau canalele noastre de socializare." },
@@ -1057,9 +1057,9 @@ const ro: Dictionary = {
 
 const el: Dictionary = {
   meta: {
-    title: "Συνδρομή IPTV & Πάνελ Μεταπωλητή | STRONG 8K",
+    title: "Strong 8K IPTV Official | Δωρεάν Δοκιμή & Άμεση Ενεργοποίηση",
     description:
-      "Το STRONG 8K είναι μια premium ευρωπαϊκή υπηρεσία IPTV με 60.000+ ζωντανά κανάλια και 200.000+ ταινίες και σειρές σε σταθερό 4K/8K Ultra HD. Αγοράστε συνδρομή IPTV ή ξεκινήστε τη μεταπώληση με το ειδικό μας πάνελ μεταπωλητή.",
+      "Αγοράστε συνδρομή Strong 8K IPTV: 60.000+ κανάλια, 200.000+ ταινίες, διακομιστές anti-freeze, άμεση ενεργοποίηση και δωρεάν δοκιμή 24 ώρες."
   },
   nav: {
     features: "Λειτουργίες",
@@ -1140,7 +1140,7 @@ const el: Dictionary = {
     subtitle: "Έχετε ακόμη απορίες; Ορίστε οι πιο συχνές.",
     items: [
       { q: "Ποιες συσκευές υποστηρίζει το STRONG 8K;", a: "Λειτουργεί σε Smart TV, Android, iOS, MAG, Amazon Firestick, Enigma2 και υπολογιστές Windows/Mac — όλες τις μεγάλες συσκευές." },
-      { q: "Πόσο γρήγορα μπορώ να δω μετά την εγγραφή;", a: "Η συνδρομή σας ενεργοποιείται άμεσα μετά την πληρωμή. Λαμβάνετε αμέσως τα στοιχεία σύνδεσης και μπορείτε να ξεκινήσετε σε λεπτά." },
+      { q: "Ποια πακέτα και τιμές προσφέρει το Strong 8K IPTV;", a: "Προσωπικά πακέτα: 6,99 $ για 1 μήνα, 22,99 $ για 6 μήνες και 32,99 $ για 12 μήνες. Πακέτα μεταπωλητή: 230 $ / 120 credits, 440 $ / 240 credits και 640 $ / 360 credits. Οι τιμές είναι εφάπαξ ανά περίοδο, σε USD, χωρίς κρυφές χρεώσεις και χωρίς αυτόματη ανανέωση." },
       { q: "Θα υπάρχουν κολλήματα ή buffering;", a: "Χρησιμοποιούμε γρήγορους διακομιστές σε όλο τον κόσμο με τεχνολογία anti-buffering, για ομαλή αναπαραγωγή χωρίς κολλήματα σε σταθερή σύνδεση." },
       { q: "Μπορώ να το χρησιμοποιώ σε πολλές συσκευές ταυτόχρονα;", a: "Όχι. Κάθε λογαριασμός λειτουργεί σε μία συσκευή τη φορά — η σύνδεση σε άλλη συσκευή αποσυνδέει την πρώτη. Ισχύει και για τους υπολογαριασμούς μεταπωλητή." },
       { q: "Πώς επικοινωνώ με την υποστήριξη;", a: "Προσφέρουμε υποστήριξη 24/7. Επικοινωνήστε μαζί μας οποτεδήποτε μέσω live chat στον ιστότοπο, email ή τα κοινωνικά μας δίκτυα." },
@@ -1157,9 +1157,9 @@ const el: Dictionary = {
 
 const ru: Dictionary = {
   meta: {
-    title: "IPTV-подписка и панель реселлера в Европе | STRONG 8K",
+    title: "Strong 8K IPTV Официально | Бесплатный Тест и Мгновенная Активация",
     description:
-      "STRONG 8K — премиальный европейский IPTV-сервис с более чем 60 000 прямых каналов и 200 000+ фильмов и сериалов в стабильном 4K/8K Ultra HD. Купите IPTV-подписку или начните перепродажу с нашей выделенной панелью реселлера.",
+      "Купите подписку Strong 8K IPTV: 60 000+ каналов, 200 000+ фильмов, anti-freeze серверы, мгновенная активация и тест 24 часа бесплатно."
   },
   nav: {
     features: "Возможности",
@@ -1240,7 +1240,7 @@ const ru: Dictionary = {
     subtitle: "Остались вопросы? Вот те, что задают чаще всего.",
     items: [
       { q: "Какие устройства поддерживает STRONG 8K?", a: "Работает на Smart TV, Android, iOS, MAG, Amazon Firestick, Enigma2 и компьютерах Windows/Mac — на всех основных устройствах." },
-      { q: "Как быстро я смогу смотреть после подписки?", a: "Подписка активируется сразу после оплаты. Вы немедленно получите данные для входа и сможете начать просмотр за несколько минут." },
+      { q: "Какие тарифы и цены предлагает Strong 8K IPTV?", a: "Личные планы: 6,99 $ за 1 месяц, 22,99 $ за 6 месяцев и 32,99 $ за 12 месяцев. Реселлерские пакеты: 230 $ / 120 кредитов, 440 $ / 240 кредитов и 640 $ / 360 кредитов. Цены разовые за период, в USD, без скрытых комиссий и без автоспродления." },
       { q: "Будут ли зависания или буферизация?", a: "Мы используем быстрые серверы по всему миру с технологией anti-buffering, что обеспечивает плавное воспроизведение без зависаний при стабильном соединении." },
       { q: "Можно ли использовать на нескольких устройствах сразу?", a: "Нет. Каждый аккаунт работает только н�� одном устройстве одновременно — вход на другом устройстве завершает первый сеанс. Это касается и субаккаунтов реселлера." },
       { q: "Как связаться с поддержкой?", a: "Мы предлагаем поддержку 24/7. Свяжитесь с нами в любое время через онлайн-чат на сайте, по email или в соцсетях." },

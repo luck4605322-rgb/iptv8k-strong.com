@@ -2,7 +2,7 @@ import { Analytics } from "@vercel/analytics/next"
 import type { Metadata, Viewport } from "next"
 import { Oswald, Inter } from "next/font/google"
 import { notFound } from "next/navigation"
-import { siteConfig } from "@/lib/seo"
+import { siteConfig, absoluteUrl } from "@/lib/seo"
 import { AnimatedBackground } from "@/components/animated-background"
 import { FloatingContact } from "@/components/floating-contact"
 import {
@@ -32,7 +32,13 @@ export async function generateMetadata({
   const { lang } = await params
   const locale: Locale = isLocale(lang) ? lang : defaultLocale
   const dict = getDictionary(locale)
-  const canonical = `/${locale}`
+  // Absolute canonical (hreflang and canonical must be fully qualified URLs).
+  const canonical = absoluteUrl(`/${locale}`)
+
+  // Absolute hreflang map: /en, /de … plus x-default → default locale.
+  const languageAlternates = Object.fromEntries(
+    Object.entries(buildLanguageAlternates()).map(([code, path]) => [code, absoluteUrl(path)]),
+  )
 
   return {
     metadataBase: new URL(siteConfig.siteUrl),
@@ -44,13 +50,15 @@ export async function generateMetadata({
     keywords: [...siteConfig.keywords],
     applicationName: siteConfig.name,
     generator: "v0.app",
-    authors: [{ name: siteConfig.legalName }],
+    authors: [{ name: siteConfig.legalName, url: siteConfig.siteUrl }],
     creator: siteConfig.legalName,
     publisher: siteConfig.legalName,
     category: "entertainment",
+    referrer: "origin-when-cross-origin",
+    formatDetection: { telephone: false, address: false, email: false },
     alternates: {
       canonical,
-      languages: buildLanguageAlternates(),
+      languages: languageAlternates,
     },
     openGraph: {
       type: "website",

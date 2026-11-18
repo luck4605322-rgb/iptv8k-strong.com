@@ -2,6 +2,8 @@ import { siteConfig, absoluteUrl } from "@/lib/seo"
 import type { Dictionary, Locale } from "@/lib/i18n"
 import { contact } from "@/lib/contact"
 import { reviews } from "@/lib/social-proof"
+import { getLongtailFaq } from "@/lib/longtail-faq"
+import { getIntroContent } from "@/lib/intro-content"
 
 // Aggregate rating reflects the customer & reseller testimonials shown on the
 // page (see the Reviews section). ratingCount matches the number of published
@@ -29,19 +31,57 @@ const offerMeta = [
   { name: "Reseller 360 credits", price: "640.00" },
 ]
 
+// Product-level facts that power the long-tail keyword coverage in the markup
+// and must stay identical to what the page copy claims.
+const productSpecs = [
+  { name: "Live channels", value: "60,000+" },
+  { name: "Movies & series (VOD)", value: "200,000+" },
+  { name: "Maximum resolution", value: "4K / 8K Ultra HD" },
+  { name: "Server uptime", value: "99.9%" },
+  { name: "Anti-freeze technology", value: "4K/8K anti-freeze + anti-buffering servers" },
+  {
+    name: "Supported devices",
+    value: "Amazon Firestick, Samsung & LG Smart TV, Android Box, Apple TV, MAG Box, Android, iOS, Windows, Mac",
+  },
+  { name: "Activation", value: "Instant activation after checkout" },
+  { name: "Free trial", value: "24 hours free trial" },
+]
+
 export function StructuredData({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   const base = absoluteUrl(`/${lang}`)
+  const longtail = getLongtailFaq(lang)
+  const intro = getIntroContent(lang)
+
+  // Main FAQ (5 items) + long-tail FAQ (5 items) → a single FAQPage entity so
+  // Google can read all ten Q&A pairs from one block.
+  const faqItems = [...dict.faq.items, ...longtail.items]
 
   const graph = [
     {
       "@type": "Organization",
       "@id": absoluteUrl("/#organization"),
       name: siteConfig.legalName,
+      // Alternate names help Google connect "Strong 8K Official", "STRONG 8K"
+      // and "Strong 8K IPTV" brand queries to the same entity.
+      alternateName: ["STRONG 8K", "Strong 8K Official", "Strong 8K IPTV", "STRONG 8K IPTV"],
       url: siteConfig.siteUrl,
-      logo: absoluteUrl("/logo-3d.png"),
+      logo: {
+        "@type": "ImageObject",
+        url: absoluteUrl("/logo-3d.png"),
+        caption: `${siteConfig.name} logo`,
+      },
       image: absoluteUrl(siteConfig.ogImage),
       description: dict.meta.description,
-      areaServed: "Europe",
+      slogan: "Strong 8K IPTV Official — 4K/8K Ultra HD, stable live streams, instant activation",
+      areaServed: [{ "@type": "Place", name: "Europe" }],
+      knowsAbout: [
+        "IPTV subscription",
+        "Strong 8K IPTV",
+        "4K/8K anti-freeze technology",
+        "IPTV for Firestick",
+        "IPTV for Smart TV",
+        "IPTV reseller panel",
+      ],
       contactPoint: [
         {
           "@type": "ContactPoint",
@@ -59,18 +99,66 @@ export function StructuredData({ lang, dict }: { lang: Locale; dict: Dictionary 
       "@id": absoluteUrl("/#website"),
       url: base,
       name: siteConfig.name,
+      alternateName: "Strong 8K Official",
       description: dict.meta.description,
       inLanguage: lang,
       publisher: { "@id": absoluteUrl("/#organization") },
     },
     {
+      // Page-level entity. It ties the long-form "introduction & core
+      // advantages" block (#about) and the long-tail FAQ (#faq-more) to the
+      // product so Google understands they are one commercial landing page,
+      // not duplicated content.
+      "@type": "WebPage",
+      "@id": `${base}#webpage`,
+      url: base,
+      name: dict.meta.title,
+      description: dict.meta.description,
+      inLanguage: lang,
+      isPartOf: { "@id": absoluteUrl("/#website") },
+      about: { "@id": `${base}#product` },
+      breadcrumb: { "@id": `${base}#breadcrumb` },
+      primaryImageOfPage: {
+        "@type": "ImageObject",
+        url: absoluteUrl(siteConfig.ogImage),
+      },
+      hasPart: [
+        {
+          "@type": "WebPageElement",
+          "@id": `${base}#about`,
+          name: intro.sections[0].heading,
+          description: intro.lead,
+          isAccessibleForFree: true,
+        },
+        {
+          "@type": "WebPageElement",
+          "@id": `${base}#pricing`,
+          name: dict.nav.pricing,
+          isAccessibleForFree: true,
+        },
+        {
+          "@type": "WebPageElement",
+          "@id": `${base}#faq-more`,
+          name: longtail.heading,
+          description: longtail.subtitle,
+          isAccessibleForFree: true,
+        },
+      ],
+    },
+    {
       "@type": "Product",
       "@id": `${base}#product`,
-      name: `${siteConfig.name} Premium IPTV`,
+      name: "Strong 8K IPTV Subscription",
+      alternateName: ["Strong 8K Official", "STRONG 8K IPTV"],
       category: "IPTV subscription and reseller service",
       description: dict.meta.description,
-      image: absoluteUrl(siteConfig.ogImage),
+      image: [absoluteUrl(siteConfig.ogImage), absoluteUrl("/logo-3d.png")],
       brand: { "@type": "Brand", name: siteConfig.name },
+      additionalProperty: productSpecs.map((spec) => ({
+        "@type": "PropertyValue",
+        name: spec.name,
+        value: spec.value,
+      })),
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue,
@@ -86,26 +174,36 @@ export function StructuredData({ lang, dict }: { lang: Locale; dict: Dictionary 
         reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5", worstRating: "1" },
         reviewBody: r.text,
       })),
-      offers: offerMeta.map((o) => ({
-        "@type": "Offer",
-        name: `${o.name} — ${siteConfig.name} IPTV`,
-        price: o.price,
-        priceCurrency: "USD",
-        availability: "https://schema.org/InStock",
+      offers: {
+        "@type": "AggregateOffer",
+        "@id": `${base}#offers`,
         url: `${base}#pricing`,
-        priceSpecification: {
-          "@type": "UnitPriceSpecification",
+        priceCurrency: "USD",
+        lowPrice: offerMeta[0].price,
+        highPrice: offerMeta[offerMeta.length - 1].price,
+        offerCount: offerMeta.length,
+        availability: "https://schema.org/InStock",
+        offers: offerMeta.map((o) => ({
+          "@type": "Offer",
+          name: `${o.name} — ${siteConfig.name} IPTV`,
           price: o.price,
           priceCurrency: "USD",
-          ...(o.period ? { billingDuration: o.period } : {}),
-        },
-      })),
+          availability: "https://schema.org/InStock",
+          url: `${base}#pricing`,
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: o.price,
+            priceCurrency: "USD",
+            ...(o.period ? { billingDuration: o.period } : {}),
+          },
+        })),
+      },
     },
     {
       "@type": "FAQPage",
       "@id": `${base}#faq`,
       inLanguage: lang,
-      mainEntity: dict.faq.items.map((f) => ({
+      mainEntity: faqItems.map((f) => ({
         "@type": "Question",
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },

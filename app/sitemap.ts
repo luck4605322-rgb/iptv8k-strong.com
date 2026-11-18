@@ -6,16 +6,32 @@ import { locales, defaultLocale } from "@/lib/i18n"
 export const dynamic = "force-static"
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  // Single build-stable timestamp: every locale renders the same page, so a
+  // per-entry `new Date()` would only add noise to the diff.
   const now = new Date()
 
-  // One entry per locale home page, each declaring hreflang alternates to all
-  // other locales plus an x-default. This is the correct international-SEO shape.
+  // hreflang map reused by every entry: 12 locales + x-default. Each URL is
+  // absolute because Google ignores relative alternates in sitemaps.
   const languageAlternates = Object.fromEntries([
     ...locales.map((lang) => [lang, absoluteUrl(`/${lang}`)]),
     ["x-default", absoluteUrl(`/${defaultLocale}`)],
   ])
 
-  return locales.map((lang) => ({
+  // Root entry: `/` is the language-detection redirect, so it is listed once
+  // with the highest priority and the same alternates map.
+  const rootEntry: MetadataRoute.Sitemap[number] = {
+    url: absoluteUrl("/"),
+    lastModified: now,
+    changeFrequency: "daily",
+    priority: 1,
+    alternates: {
+      languages: languageAlternates,
+    },
+  }
+
+  // One entry per locale home page, each declaring hreflang alternates to all
+  // other locales plus an x-default. This is the correct international-SEO shape.
+  const localeEntries: MetadataRoute.Sitemap = locales.map((lang) => ({
     url: absoluteUrl(`/${lang}`),
     lastModified: now,
     changeFrequency: "weekly",
@@ -24,4 +40,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       languages: languageAlternates,
     },
   }))
+
+  return [rootEntry, ...localeEntries]
 }
